@@ -33,18 +33,39 @@
             }
             p {
                 font-size: 1.2rem;
+                font-weight: 400;
             }
             hr {
                 width: 100%;
                 margin: 2rem 0;
-                height: 0px;
                 border-style: solid;
-                border-collapse: collapse;
                 border-color: #c1c1c2;
                 border-top: 1px solid #fff;
                 border-right: 1px solid #fff;
                 border-left: 1px solid #fff;
             }
         }
+    }
+}
+
+.data-bottom dl {
+    font-size: 90%;
+    width: 100%;
+    display: block;
+    dt {
+        width: 120px;
+        height: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        display: inline-block;
+
+        &:before {
+            content: "";
+            display: block;
+        }
+    }
+    dd {
+        display: inline-block;
+ 
     }
 }
