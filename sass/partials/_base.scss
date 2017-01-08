@@ -15,9 +15,9 @@ body {
 }
 
 .container {
-    display: flex;
     margin: 0 auto;
     width: 100%;
+    display: flex;
     @media screen and (min-width: 1200px) {
         width: 1170px;
     }

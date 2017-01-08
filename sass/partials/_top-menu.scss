@@ -1,13 +1,13 @@
-/* Top Navigation */
-
 #main-nav {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100vw;
     ul {
-        padding-top: 3rem;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        padding: 7.5rem 0 0.8rem 0;
+        @media screen and (max-width: 1200px) and (min-width: 421px) {
+            padding-right: 1rem;
+        }
         li {
             display: inline-block;
             @media only screen and (max-width: 420px) {
@@ -31,18 +31,20 @@
             }
         }
     }
-    #hamburger {
-        display: block;
-        cursor: pointer;
-        @media screen and (min-width: 421px) {
-            display: none;
-        }
-        &:before {
-            font-family: FontAwesome;
-            font-size: 24px;
-            content: "\f0c9";
-            text-align: center;
-            color: #fff;
-        }
+}
+
+#hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 7.5rem 0 0.8rem 1rem;
+    // @media screen and (min-width: 421px) {
+    //     display: none;
+    // }
+    &:before {
+        font-family: FontAwesome;
+        font-size: 24px;
+        content: "\f0c9";
+        text-align: center;
+        color: #fff;
     }
 }
