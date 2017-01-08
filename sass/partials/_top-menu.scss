@@ -66,4 +66,7 @@
     list-style-type: none;
     text-align: center;
     margin-left: -42px;
+    &:active {
+        color: $color-accent;
+    }
 }

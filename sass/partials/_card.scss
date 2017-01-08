@@ -1,0 +1,28 @@
+.card {
+    padding-top: 7rem;
+    .front-main {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .avatar {
+            padding: 0 10% 0 12%;
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h1,
+            p {
+                letter-spacing: -0.02rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            hr {
+                width: 100%;
+                border: 0.5px solid #c1c1c2;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
