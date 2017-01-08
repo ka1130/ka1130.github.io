@@ -26,8 +26,11 @@ body {
 
 .container {
 	display: flex;
-	width: 1170px;
 	margin: 0 auto;
+
+	@media screen and (min-width: 1200px) {
+		width: 1170px;
+	}	
 }
 
 /* FRONT */
@@ -38,13 +41,22 @@ body {
     background-image: url(../img/bg-image.jpg);
     background-size: 100%;
     height: 500px;
+
+    .container {
+    	justify-content: flex-end;
+    }
 }
+
+/* Top Navigation */
 
 #main-nav {
 
 	ul {
 		padding-top: 3rem;
 		width: 1170px;
+		display: flex;
+		justify-content: flex-end;
+		margin: 75px 0 10px 0;
 
 		li {
 			display: inline-block;
@@ -54,7 +66,7 @@ body {
 				color: #fff;
 				padding-left: 1rem;
 				text-transform: uppercase;
-				font-weight: 600;
+				font-weight: 500;
 
 				&:hover {
 					text-decoration: none;
@@ -69,13 +81,33 @@ body {
 			}
 		}
 	}
-}
 
+//	@media only screen and (max-width: 768px) {
+	
+		#hamburger {
+			display: block;
+			cursor: pointer;
+			
+			&:before {
+				font-family: FontAwesome;
+				font-size: 24px;
+				content: "\f0c9";
+				text-align: center;
+				color: #fff;
+			}
+		}
+	}
+//}
 
-.card {
+@media screen and (min-width: 1200px) {
+	.card {
+	width: 1170px;
 	height: 510px;
 	background-color: #fff;
 	margin: 0 auto;
+
+	}
 }
+
 
 
