@@ -1,5 +1,21 @@
+#front {
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    background-image: url(../img/bg-image.jpg);
+    background-size: cover;
+    height: 100vh;
+    .container {
+        justify-content: flex-end;
+    }
+}
+
 .card {
     padding-top: 7rem;
+    padding-bottom: 7rem;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.25);
     .front-main {
         display: flex;
         justify-content: flex-start;
@@ -20,8 +36,14 @@
             }
             hr {
                 width: 100%;
-                border: 0.5px solid #c1c1c2;
                 margin: 2rem 0;
+                height: 0px;
+                border-style: solid;
+                border-collapse: collapse;
+                border-color: #c1c1c2;
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
+                border-left: 1px solid #fff;
             }
         }
     }
