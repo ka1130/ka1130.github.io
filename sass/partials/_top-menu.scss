@@ -32,21 +32,18 @@
         }
     }
 }
-    
+
 #hamburger {
     display: block;
     cursor: pointer;
     padding: 0 0 0 1rem;
+    font-family: FontAwesome;
+    font-size: 2rem;
+    line-height: 8rem;
+    text-align: center;
+    color: #fff;
     @media screen and (min-width: 421px) {
         display: none;
-    }
-    &:before {
-        font-family: FontAwesome;
-        font-size: 2rem;
-        line-height: 8rem;
-        content: "\f0c9";
-        text-align: center;
-        color: #fff;
     }
 }
 
