@@ -22,29 +22,40 @@
                 &:hover {
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: #f27768;
+                    color: $color-accent;
                     &:after {
                         content: "_";
-                        color: #f27768;
+                        color: $color-accent;
                     }
                 }
             }
         }
     }
 }
-
+    
 #hamburger {
     display: block;
     cursor: pointer;
-    padding: 7.5rem 0 0.8rem 1rem;
-    // @media screen and (min-width: 421px) {
-    //     display: none;
-    // }
+    padding: 0 0 0 1rem;
+    @media screen and (min-width: 421px) {
+        display: none;
+    }
     &:before {
         font-family: FontAwesome;
-        font-size: 24px;
+        font-size: 2rem;
+        line-height: 8rem;
         content: "\f0c9";
         text-align: center;
         color: #fff;
+    }
+}
+
+.menu-responsive {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    li {
+        display: block;
     }
 }
