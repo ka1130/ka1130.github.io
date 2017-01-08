@@ -51,8 +51,19 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-responsive-list {
     display: flex;
-    li {
-        display: block;
-    }
+    flex-grow: 4;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-responsive-element {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -42px;
 }
