@@ -10,7 +10,7 @@ gulp.task('jshint', function () {
 });
  
 gulp.task('sass', function () {
-    return gulp.src('scss/style.scss')
+    return gulp.src('sass/main.scss')
     	.pipe(sourcemaps.init())
         .pipe(sass({
         	outputStyle: 'expanded',
@@ -21,5 +21,5 @@ gulp.task('sass', function () {
 });
  
 gulp.task('watch', function () {
-    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('sass/**/*.scss', ['sass']);
 });

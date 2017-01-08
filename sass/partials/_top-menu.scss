@@ -1,0 +1,48 @@
+/* Top Navigation */
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        padding-top: 3rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            display: inline-block;
+            @media only screen and (max-width: 420px) {
+                display: none;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                padding-left: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                &:hover {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #f27768;
+                    &:after {
+                        content: "_";
+                        color: #f27768;
+                    }
+                }
+            }
+        }
+    }
+    #hamburger {
+        display: block;
+        cursor: pointer;
+        @media screen and (min-width: 421px) {
+            display: none;
+        }
+        &:before {
+            font-family: FontAwesome;
+            font-size: 24px;
+            content: "\f0c9";
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
