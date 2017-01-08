@@ -26,7 +26,8 @@
         .data {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
+            height: 310px;
             h1,
             p {
                 letter-spacing: -0.02rem;
@@ -44,6 +45,19 @@
                 border-right: 1px solid #fff;
                 border-left: 1px solid #fff;
             }
+            .social {
+                display: flex;
+                align-content: flex-end;
+                svg {
+                    padding-right: 0.8rem;
+                    cursor: pointer;
+                    &:hover {
+                        .social-bg {
+                            fill: $color-accent;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -58,7 +72,6 @@
         font-weight: 800;
         text-transform: uppercase;
         display: inline-block;
-
         &:before {
             content: "";
             display: block;
@@ -66,6 +79,5 @@
     }
     dd {
         display: inline-block;
- 
     }
 }
