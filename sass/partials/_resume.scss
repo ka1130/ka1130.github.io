@@ -11,7 +11,7 @@
             text-align: center;
             margin: 0 15px;
         }
-        .resume-education {
+        .resume {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,8 +28,13 @@
                     content: "\eb9b";
                     position: absolute;
                     left: -2rem;
-                    top: 0.1rem;
+                    top: 0.25rem;
                 }
+            }
+            h3.employment {
+            	&:before {
+            		content: "\ea6c";
+            	}
             }
             .cv-block {
                 display: flex;
@@ -109,3 +114,5 @@
         }
     }
 }
+
+
