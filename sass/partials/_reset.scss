@@ -1,6 +1,16 @@
-body, html, ul, li, h1, p, dl, dt, dd {
+body,
+html,
+ul,
+li,
+h1,
+p,
+dl,
+dt,
+dd {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: $color-main;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
