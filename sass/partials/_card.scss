@@ -48,13 +48,16 @@
             .social {
                 display: flex;
                 align-content: flex-end;
-                svg {
-                    padding-right: 0.8rem;
+                #github,
+                #linkedin,
+                #wordpress {
+                    width: 35px;
+                    height: 37px;
+                    background-color: $color-light;
+                    margin-right: 0.8rem;
                     cursor: pointer;
                     &:hover {
-                        .social-bg {
-                            fill: $color-accent;
-                        }
+                        background-color: $color-accent;
                     }
                 }
             }
