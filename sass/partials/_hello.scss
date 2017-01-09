@@ -1,21 +1,43 @@
 #hello {
     background-color: $color-bg1;
-    margin-top: 10rem;
+    margin-top: 4rem;
     text-align: center;
     .container {
         display: flex;
         flex-direction: column;
+        .download-cv-block {
+            width: 170px;
+            height: 50px;
+            background-color: $color-accent;
+            align-self: center;
+            margin-top: 2rem;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid $color-accent;
+            &:hover {
+                @include hoverTransition(white);
+                a {
+                    @include hoverTextTransition($color-accent);
+                }
+            }
+            a {
+                font-weight: 700;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
     }
 }
 
 .paragraph {
-		
     @media screen and (min-width: 1024px) {
         width: 975px;
         margin: 0 auto;
     }
     @media screen and (max-width: 1023px) and (min-width: 768px) {
-    	width: 700px;
+        width: 700px;
         margin: 0 auto;
     }
 }

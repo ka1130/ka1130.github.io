@@ -1,5 +1,23 @@
 @mixin boxShadow($opacity) {
-	-webkit-box-shadow: -5px 5px 8px 0px rgba(0,0,0,$opacity);
-	-moz-box-shadow: -5px 5px 8px 0px rgba(0,0,0,$opacity);
-	box-shadow: -5px 5px 8px 0px rgba(0,0,0,$opacity);
+    -webkit-box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, $opacity);
+    -moz-box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, $opacity);
+    box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, $opacity);
+}
+
+@mixin hoverTransition($backgroundColor) {
+    background-color: $backgroundColor;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+@mixin hoverTextTransition($textColor) {
+    color: $textColor;
+    -webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
 }

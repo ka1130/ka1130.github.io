@@ -27,7 +27,40 @@ $(document).ready(function() {
             menuList.removeClass("menu-responsive-list");
             menuElements.hide();
         });
-    } 
+    }
+
+    //Download CV button
+
+    var resumeBtn = $(".download-cv-block");
+    var resumeLink = resumeBtn.find("a");
+
+    console.log(resumeBtn);
+
+    // resumeBtn.hover(function(event) {
+    //     resumeBtn.css({
+    //         "backgroundColor": "white",
+    //         "border": "4px solid #f27768",
+    //     });
+    //     resumeLink.css({"color": "#f27768"});
+    // }, function(event) {
+    //      resumeBtn.css({
+    //         "backgroundColor": "",
+    //         "border": "",
+    //     });
+    //     resumeLink.css({"color": ""});
+    // });
+
+    resumeBtn.hover(function(event) {
+        console.log("ok");
+        resumeBtn.animate({
+            backgroundColor: "#fff",
+            border: "4px solid #f27768",
+        }, 500);
+
+
+    });
+
+
 
 
 
