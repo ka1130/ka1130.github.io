@@ -15,7 +15,7 @@ $(document).ready(function() {
         mainNav.toggleClass("menu-responsive");
         hamburger.toggleClass("fa-bars").toggleClass("fa-times");
         menuList.toggleClass("menu-responsive-list");
-        menuElements.show().addClass("menu-responsive-element");
+        menuElements.toggle().addClass("menu-responsive-element");
 
     });
 
@@ -34,22 +34,6 @@ $(document).ready(function() {
     var resumeBtn = $(".download-cv-block");
     var resumeLink = resumeBtn.find("a");
 
-    console.log(resumeBtn);
-
-    // resumeBtn.hover(function(event) {
-    //     resumeBtn.css({
-    //         "backgroundColor": "white",
-    //         "border": "4px solid #f27768",
-    //     });
-    //     resumeLink.css({"color": "#f27768"});
-    // }, function(event) {
-    //      resumeBtn.css({
-    //         "backgroundColor": "",
-    //         "border": "",
-    //     });
-    //     resumeLink.css({"color": ""});
-    // });
-
     resumeBtn.hover(function(event) {
         console.log("ok");
         resumeBtn.animate({
@@ -59,12 +43,6 @@ $(document).ready(function() {
 
 
     });
-
-
-
-
-
-
 
 
 
