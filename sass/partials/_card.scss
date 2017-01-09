@@ -15,13 +15,13 @@
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
-    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.25);
+    @include boxShadow(0.25);
     .front-main {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         .avatar {
-            padding: 0 10% 0 12%;
+            padding: 0 8% 0 8%;
         }
         .data {
             display: flex;
