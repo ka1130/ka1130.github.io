@@ -1,11 +1,13 @@
 #front {
     background-repeat: no-repeat;
-    background-color: #f2f2f2;
+    background-color: $color-bg1;
     background-image: url(../img/bg-image.jpg);
     background-size: cover;
-    height: 100vh;
     .container {
         justify-content: flex-end;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 }
 
@@ -15,7 +17,16 @@
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
-    height: 725px;
+    height: auto;
+    @media only screen and (min-width: 431px) and (max-width: 768px) {
+        height: 750px;
+    }
+    @media only screen and (max-width: 430px) and (min-width: 321px) {
+        height: 800px;
+    }
+    @media only screen and (max-width: 320px) {
+        height: 850px;
+    }
     @include boxShadow(0.25);
     .front-main {
         display: flex;
@@ -23,12 +34,20 @@
         flex-wrap: wrap;
         @media screen and (max-width: 768px) {
             flex-direction: column;
+            width: 80%;
         }
         .avatar {
             padding: 0 4% 0 14%;
-            @media screen and (max-width: 768px) {
-                margin-left: 3rem;
+            max-width: 100%;
+            height: auto;
+            @media screen and (max-width: 768px) and (min-width: 321px) {
+                margin-left: 2rem;
                 margin-bottom: 3rem;
+                padding: 0;
+            }
+            @media screen and (max-width: 320px) {
+                margin-left: 1rem;
+                margin-top: 1rem;
                 padding: 0;
             }
         }
@@ -40,13 +59,19 @@
             h1,
             p {
                 letter-spacing: -0.02rem;
-                @media screen and (max-width: 768px) {
-                    margin-left: 3rem;
+                @media screen and (max-width: 768px) and (min-width: 321px) {
+                    margin-left: 2rem;
+                }
+                @media screen and (max-width: 320px) {
+                    margin-left: 1rem;
                 }
             }
             p {
                 font-size: 1.2rem;
                 font-weight: 400;
+                @media screen and (max-width: 768px) {
+                    margin-top: 1.5rem;
+                }
             }
             hr {
                 width: 100%;
@@ -56,16 +81,24 @@
                 border-top: 1px solid #fff;
                 border-right: 1px solid #fff;
                 border-left: 1px solid #fff;
-                @media screen and (max-width: 768px) {
-                    margin-left: 3rem;
+                @media screen and (max-width: 768px) and (min-width: 321px) {
+                    margin-left: 2rem;
+                }
+                @media screen and (max-width: 320px) {
+                    margin-left: 1rem;
+                    margin-top: 1rem;
                 }
             }
             .social {
                 display: flex;
                 align-content: flex-end;
                 margin: 0;
-                @media screen and (max-width: 768px) {
-                    margin-left: 3rem;
+                @media screen and (max-width: 768px) and (min-width: 321px) {
+                    margin-left: 2rem;
+                    margin-top: 2rem;
+                }
+                @media screen and (max-width: 320px) {
+                    margin-left: 1rem;
                     margin-top: 2rem;
                 }
                 #github,
@@ -87,14 +120,19 @@
 
 .data-bottom dl {
     padding: 0;
-    margin-left: 3rem;
     font-size: 90%;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 769px) and (min-width: 321px) {
         display: block;
         width: 100%;
         padding: 0;
-        margin: 0;
-    }
+        margin-left: 2rem;
+        }
+    @media screen and (max-width: 320px) {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-left: 1rem;
+        }
     dt {
         font-weight: 800;
         text-transform: uppercase;
@@ -114,5 +152,3 @@
         }
     }
 }
-
-

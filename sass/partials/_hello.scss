@@ -1,0 +1,21 @@
+#hello {
+    background-color: $color-bg1;
+    margin-top: 10rem;
+    text-align: center;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.paragraph {
+		
+    @media screen and (min-width: 1024px) {
+        width: 975px;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+    	width: 700px;
+        margin: 0 auto;
+    }
+}
