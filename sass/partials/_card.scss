@@ -59,6 +59,7 @@
             h1,
             p {
                 letter-spacing: -0.02rem;
+                margin: 0;
                 @media screen and (max-width: 768px) and (min-width: 321px) {
                     margin-left: 2rem;
                 }
@@ -120,6 +121,7 @@
 
 .data-bottom dl {
     padding: 0;
+    margin: 0;
     font-size: 90%;
     @media screen and (max-width: 769px) and (min-width: 321px) {
         display: block;
