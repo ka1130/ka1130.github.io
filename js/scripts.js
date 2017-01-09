@@ -41,8 +41,14 @@ $(document).ready(function() {
             border: "4px solid #f27768",
         }, 500);
 
-
     });
+
+    //Resume circles 
+
+    var resumeCircle = $(".cv-block-header");
+    resumeCircle.addClass("on");
+
+
 
 
 

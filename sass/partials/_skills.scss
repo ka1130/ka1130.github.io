@@ -1,0 +1,12 @@
+#skills {
+    background-color: $color-bg2;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            margin-top: 8rem;
+        }
+    }
+
+}
