@@ -32,12 +32,20 @@
 }
 
 .paragraph {
+    margin: 0 auto;
     @media screen and (min-width: 1024px) {
         width: 975px;
-        margin: 0 auto;
     }
-    @media screen and (max-width: 1023px) and (min-width: 768px) {
-        width: 700px;
-        margin: 0 auto;
+    @media screen and (max-width: 1023px) and (min-width: 769px) {
+        width: 650px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 550px) {
+    	width: 500px;
+    }
+    @media screen and (max-width: 549px) and (min-width: 421px) {
+    	width: 400px;
+    }
+    @media screen and (max-width: 420px) {
+    	width: 310px;
     }
 }
