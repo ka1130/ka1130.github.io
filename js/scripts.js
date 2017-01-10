@@ -66,9 +66,8 @@ $(document).ready(function() {
         }
     });
 
-    //Fancybox
+    //Gallery
 
-    $(".fancybox").fancybox();
 
 
 
