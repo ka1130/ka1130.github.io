@@ -10,7 +10,7 @@
     }
     .progress-bar {
         position: relative;
-        width: 30%;
+        width: 90%;
         height: 10px;
         background-color: #fff;
         margin: 10px;
@@ -23,4 +23,15 @@
         }
     }
 }
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.wrapper-column {
+	width: 50%;
+}
+
+
 

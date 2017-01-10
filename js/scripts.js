@@ -53,7 +53,7 @@ $(document).ready(function() {
     var skillsH2 = $("#skills h2");
 
     skillsH2.on("click", function(event) {
-        innerBar.animate({width: "80%"}, 2000);
+        innerBar.animate({width: "90%"}, 2000);
 
     });
 
