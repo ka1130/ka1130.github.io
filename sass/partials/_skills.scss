@@ -8,5 +8,19 @@
             margin-top: 8rem;
         }
     }
-
+    .progress-bar {
+        position: relative;
+        width: 30%;
+        height: 10px;
+        background-color: #fff;
+        margin: 10px;
+        border-radius: 5px;
+        .inner-bar {
+            position: absolute;
+            width: 1%;
+            height: 100%;
+            background-color: $color-accent;
+        }
+    }
 }
+
