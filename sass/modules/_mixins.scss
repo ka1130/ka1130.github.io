@@ -4,6 +4,18 @@
     box-shadow: -5px 5px 8px 0px rgba(0, 0, 0, $opacity);
 }
 
+@mixin smallBoxShadow($opacity) {
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, $opacity);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, $opacity);
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, $opacity);
+}
+
+@mixin smallInsideShadow($opacity) {
+    -webkit-box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0,$opacity);
+    -moz-box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0,$opacity);
+    box-shadow: inset 0px -4px 27px -5px rgba(0, 0,0 ,$opacity);
+}
+
 @mixin hoverTransition($backgroundColor) {
     background-color: $backgroundColor;
     -webkit-transition: background-color 200ms linear;

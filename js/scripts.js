@@ -67,7 +67,31 @@ $(document).ready(function() {
     });
 
     //Gallery
+    var modalContainer = $(".modal-container");
+    var imgModal = $(".gallery-image-modal img");
+    var imgToClick = $(".gallery-image");
+    var imgBigSrc = imgToClick.find("img").attr("src");
+    var closeBtn = $(".close-img");
 
+    imgModal.hide();
+    modalContainer.hide();
+
+    imgToClick.on("click", function(event) {
+
+        imgModal.show();
+        modalContainer.show();
+
+        imgModal.attr("src", $(this).find("img").attr("src"));
+
+        $(".gallery-image-modal").find("span").addClass("test-classs");
+    });
+
+    closeBtn.on("click", function(event) {
+
+        imgModal.hide();
+        modalContainer.hide();
+        
+    });
 
 
 
