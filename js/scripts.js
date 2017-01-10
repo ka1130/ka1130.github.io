@@ -48,16 +48,20 @@ $(document).ready(function() {
     var resumeCircle = $(".cv-block-header");
     resumeCircle.addClass("on");
 
+
     //Progress bars
     var innerBar = $(".inner-bar");
     var skillsH2 = $("#skills h2");
 
     skillsH2.on("click", function(event) {
-        innerBar.animate({width: "90%"}, 2000);
+
+        $.each(innerBar, function(index, value) {
+            $(this).animate({ width: $(this).data("percent") }, 1500);
+        });
 
     });
 
-    
+
 
 
 });
