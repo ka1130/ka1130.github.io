@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     //Responsive Menu
 
     var mobileViewport = window.matchMedia("screen and (max-width: 480px)");
@@ -64,6 +65,10 @@ $(document).ready(function() {
 
         }
     });
+
+    //Fancybox
+
+    $(".fancybox").fancybox();
 
 
 

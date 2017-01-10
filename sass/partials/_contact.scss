@@ -1,0 +1,16 @@
+#contact {
+    background-color: $color-bg2;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3rem;
+        h2 {
+            margin-top: 8rem;
+        }
+        p {
+            text-align: center;
+            margin: 0 15px;
+        }
+    }
+}
