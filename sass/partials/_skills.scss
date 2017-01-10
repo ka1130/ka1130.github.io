@@ -25,13 +25,27 @@
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .wrapper-column {
-	width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .skill-text {
+    	padding: 0;
+    	margin-left: 10px;
+    	margin-bottom: 0;
+    	width: 90%;
+    	font-size: 0.9rem;
+    	font-weight: bold;
+    	display: flex;
+    	justify-content: space-between;
+
+    	span {
+    		display: block;
+    	}
+    }
 }
-
-
-
