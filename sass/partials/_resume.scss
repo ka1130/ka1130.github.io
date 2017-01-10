@@ -1,5 +1,5 @@
 #resume {
-    background-color: $color-bg1;
+    background-color: $color-bg2;
     .container {
         display: flex;
         flex-direction: column;
@@ -21,6 +21,7 @@
                 position: relative;
                 font-size: 1.6rem;
                 margin-bottom: 3rem;
+                margin-top: 4rem;
                 &:before {
                     font-family: "icofont";
                     font-size: 25px;
@@ -30,6 +31,11 @@
                     left: -2rem;
                     top: 0.25rem;
                 }
+            }
+            h3.general-skills {
+                &:before {
+                    content: "\f0b7";
+                } 
             }
             h3.employment {
             	&:before {

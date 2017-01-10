@@ -50,17 +50,20 @@ $(document).ready(function() {
 
 
     //Progress bars
-    var innerBar = $(".inner-bar");
-    var skillsH2 = $("#skills h2");
 
-    skillsH2.on("click", function(event) {
+    $(window).on('scroll', function() {
+        var innerBar = $(".inner-bar");
+        var yScroll = window.pageYOffset;
+        var position = $("#resume").offset().top;
 
-        $.each(innerBar, function(index, value) {
-            $(this).animate({ width: $(this).data("percent") }, 1500);
-        });
+        if (yScroll > position - 10) {
 
+            $.each(innerBar, function(index, value) {
+                $(this).animate({ width: $(this).data("percent") }, 1500);
+            });
+
+        }
     });
-
 
 
 

@@ -26,14 +26,21 @@
 
 .wrapper {
     display: flex;
-    flex-direction: row;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
 }
 
 .wrapper-column {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     flex-direction: column;
+    @media screen and (min-width: 701px) {
+        width: 50%;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 700px) and (min-width: 320px){
+        width: 100%;
+    }
     .skill-text {
     	padding: 0;
     	margin-left: 10px;
