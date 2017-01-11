@@ -3,8 +3,11 @@
     background-color: $color-bg1;
     background-image: url(../img/bg-image.jpg);
     background-size: 100%;
+
     .container {
+        display: flex;
         justify-content: flex-end;
+        position: relative;
         @media screen and (max-width: 768px) {
             width: 100%;
         }

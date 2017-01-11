@@ -30,6 +30,16 @@ $(document).ready(function() {
         });
     }
 
+    //Home hover
+
+    var homeBtn = $("#front li.home").find("a").find("img");
+
+    homeBtn.hover(function(event){
+        $(this).attr("src", "img/home-hover.svg");
+    }, function(event){
+        $(this).attr("src", "img/home.svg");
+    });
+
     //Download CV button
 
     var resumeBtn = $(".download-cv-block");

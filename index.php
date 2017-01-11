@@ -16,6 +16,10 @@
 <body>
     <section id="front">
         <div class="container">
+            <ul id="languages">
+                <li><a href="#">PL</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
             <nav id="main-nav">
                 <ul>
                     <li><a href="#hello">Hello</a></li>
@@ -283,7 +287,7 @@
                 <h3 class="employment">Doświadczenie</h3>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        Polish Campus Marketing Sp. z o.o. / Trend Food International GmbH <br>
+                        Polish Campus Marketing / Trend Food International <br>
                         <small>Warszawa</small> 
                     </h4>
                     <p class="dates">
