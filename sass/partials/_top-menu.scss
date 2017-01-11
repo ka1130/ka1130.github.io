@@ -76,6 +76,9 @@
     list-style-type: none;
     display: flex;
     padding: 7.5rem 0 0.8rem 2rem;
+    @media screen and (min-width: 1200px) {
+        padding-left: 0;
+    }
     @media screen and (max-width: 450px) {
         position: absolute;
         padding: 0;
