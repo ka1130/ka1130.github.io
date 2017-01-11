@@ -283,7 +283,8 @@
                 <h3 class="employment">Doświadczenie</h3>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        Polish Campus Marketing Sp. z o.o. / Trend Food International GmbH  
+                        Polish Campus Marketing Sp. z o.o. / Trend Food International GmbH <br>
+                        <small>Warszawa</small> 
                     </h4>
                     <p class="dates">
                         07/2012 - 07/2016
@@ -292,49 +293,109 @@
                         Senior Graphic Designer
                     </p>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus eaque, rerum expedita doloremque fugit quidem officiis adipisci, quisquam eum corporis, illo facere! Delectus, aperiam?
+                        Odpowiedzialna za wszelkiego rodzaju projekty graficzne, projekty internetowe (wdrażanie, edycja i stały nadzór nad stronami firmowymi opartymi o Wordpress), sesje fotograficzne, teksty marketingowe, tłumaczenia i działania organizacyjne. Współpraca z programistami www.
                     </p>
                 </div>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        University of Minnesota Twin Cities 
+                        M&amp;M Consulting // Eko Cykl Organizacja Odzysku <br>
+                        <small>Warszawa</small>
                     </h4>
                     <p class="dates">
-                        2009 - 2010
+                        01/2012 - 06/2012
                     </p>
                     <p class="place">
-                        Bachelor Computer Engineering Lorem Ipsum Dolor
+                        Grafik / Redaktor prowadzący
                     </p>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus eaque, rerum expedita doloremque fugit quidem officiis adipisci, quisquam eum corporis, illo facere! Delectus, aperiam?
+                        Odpowiedzialna za wszelkiego rodzaju projekty graficzne. Redaktor prowadzący czasopisma “Logistyka Odzysku”: tworzenie layoutu, DTP, pisanie artykułów specjalistycznych, korekta, działania organizacyjne. Projekty www, layouty stron, mailingi i szablony aukcyjne w HTML, banery Flash. Współpraca z programistami. Tłumacz. Fotograf.
                     </p>
                 </div>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        University of Minnesota Twin Cities 
+                        Promotion Plus <br>
+                        <small>Warszawa</small>
                     </h4>
                     <p class="dates">
-                        2009 - 2010
+                        09/2011 - 12/2011
                     </p>
                     <p class="place">
-                        Bachelor Computer Engineering Lorem Ipsum Dolor
+                        Grafik
                     </p>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus eaque, rerum expedita doloremque fugit quidem officiis adipisci, quisquam eum corporis, illo facere! Delectus, aperiam?
+                        Główny projektant graficzny, odpowiedzialna za wszelkiego rodzaju projekty graficzne, www i DTP.
                     </p>
                 </div>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        University of Minnesota Twin Cities 
+                        Schneider Electric Polska<br>
+                        <small>Warszawa</small>
                     </h4>
                     <p class="dates">
-                        2009 - 2010
+                        06/2011 - 09/2011
                     </p>
                     <p class="place">
-                        Bachelor Computer Engineering Lorem Ipsum Dolor
+                        Graphic Designer
                     </p>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus eaque, rerum expedita doloremque fugit quidem officiis adipisci, quisquam eum corporis, illo facere! Delectus, aperiam?
+                        Zespół Global Marketingu: tworzenie layoutów i adaptacja projektów na potrzeby międzynarodowe. Współpraca przy tworzeniu kampanii marketingowych.
+                    </p>
+                </div>
+                <div class="cv-block">
+                    <h4 class="cv-block-header">
+                        XL Energy Marketing<br>
+                        <small>Warszawa</small>
+                    </h4>
+                    <p class="dates">
+                        02/2009 - 04/2011
+                    </p>
+                    <p class="place">
+                        Graphic Designer
+                    </p>
+                    <p class="description">
+                        Odpowiedzialna za różnego rodzaju zadania kreatywne: projektowanie graficzne, DTP, opieka nad stroną internetową, copywriting, sesje fotograficzne, zadania organizacyjne. Projekty ATL i BTL realizowane międzynarodowo (Europa, Azja, Afryka, Ameryka Północna).
+                    </p>
+                </div>
+                <div class="cv-block">
+                    <h4 class="cv-block-header">
+                        POLA design.<br>
+                        <small>Warszawa</small>
+                    </h4>
+                    <p class="dates">
+                        11/2008 - 01/2009
+                    </p>
+                    <p class="place">
+                        Grafik
+                    </p>
+                    <p class="description">
+                        Tworzenie layoutów czasopism, katalogów, różnego rodzaju materiałów drukowanych.
+                    </p>
+                </div>
+                <div class="cv-block">
+                    <h4 class="cv-block-header">
+                        Agencja reklamowa KOLA:Ż <br>
+                        <small>Warszawa</small>
+                    </h4>
+                    <p class="dates">
+                        09/2007 - 11/2008
+                    </p>
+                    <p class="place">
+                        Grafik 
+                    </p>
+                    <p class="description">
+                        Projekty ATL&amp;BTL, w tym udział w tworzeniu kampanii reklamowych, layouty, projekty na potrzeby druku i Internetu. Prace dla największych marek, takich jak Roche, Mercedes-Benz, Lotto, Cadbury Wedel, Heel etc.
+                    </p>
+                </div>
+                <div class="cv-block">
+                    <h4 class="cv-block-header">
+                        Praktyki zawodowe / Phare 2003 <br>
+                        <small>Leipzig / Niemcy</small>
+                    </h4>
+                    <p class="dates">
+                        07/2005 - 08/2005
+                    </p>
+                    <p class="place">
+                        Atelier malarza Ulricha Strube &amp; wydawnictwo przy Jean-Gebser Akademie 
                     </p>
                 </div>
             </div>
@@ -422,8 +483,20 @@
                         <textarea id="message-input" name="message" class="form-control" placeholder="Wpisz wiadomość" rows="6" data-error="Please, enter your message" required=""></textarea>
                         <br>
                         <div class="help-block with-errors"></div>
-                        <button type="Submit">Wyślij</form>
+                        <button type="Submit">Wyślij</button>
                     </form>
+<!-- <?php
+    
+    // if( $_SERVER['REQUEST_METHOD'] === 'GET' ) {
+
+    //     if( isset( $_GET['msg'] ) && isset( $_GET['mode'] ) ) {
+
+    //         echo '<div class="message-alert ' . $_GET['mode'] . '">' . $_GET['msg'] . '</div>';
+
+        }
+    }
+
+?>  -->
                 </div>
             </div>
         </div>
