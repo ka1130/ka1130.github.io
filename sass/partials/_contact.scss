@@ -29,13 +29,14 @@
                 font-family: "Inconsolata", Helvetica, Arial, sans-serif;
                 font-weight: normal;
                 font-size: 1.2em;
-                margin: 2px 0px 28px 0px;
                 color: #555555;
                 margin-bottom: 2rem;
+                margin-top: 0;
+                padding: 0;
             }
-            dl {
-                display: block;
-                width: 100%;
+
+            textarea.form-control {
+                height: auto;
             }
             .form-control {
                 width: 100%;
@@ -58,6 +59,43 @@
             }
         }
     }
+    dl {
+        padding: 0;
+        margin: 10px 0 0 0;
+        font-size: 90%;
+        @media screen and (max-width: 769px) and (min-width: 321px) {
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin-left: 2rem;
+        }
+        @media screen and (max-width: 320px) {
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin-left: 1rem;
+        }
+        dt {
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: $color-accent;
+            @media screen and (min-width: 768px) {
+                width: 120px;
+                height: 30px;
+                display: inline-block;
+                &:before {
+                    content: "";
+                    display: block;
+                }
+            }
+        }
+        dd {
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 .form-block {
@@ -66,4 +104,23 @@
     justify-content: center;
     box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.25);
     padding: 5rem 7rem;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    background-color: $color-accent;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid $color-accent;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        @include hoverTransition(white);
+        @include hoverTextTransition($color-accent);
+    }
 }
