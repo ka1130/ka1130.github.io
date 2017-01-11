@@ -83,7 +83,7 @@ $(document).ready(function() {
     imgToClick.on("click", function(event) {
 
         imgModal.show();
-        modalContainer.show();
+        modalContainer.css({"display": "flex"});
 
         imgModal.attr("src", $(this).find("img").attr("src"));
 

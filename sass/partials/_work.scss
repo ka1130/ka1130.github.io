@@ -27,7 +27,6 @@
                 overflow: hidden;
                 img {
                     max-width: 100%;
-                    // height: auto;
                     display: block;
                     border-radius: 5px;
                     object-fit: fill;
@@ -38,7 +37,7 @@
 }
 
 .modal-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;

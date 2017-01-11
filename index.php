@@ -475,12 +475,12 @@
                     <h3>Or just write me a letter here_</h3>
                     <form action="">
                         <label>Imię i nazwisko
-                            <input type="text" class="form-control" placeholder="Podaj imię i nazwisko" required>
+                            <input type="text" class="form-control" placeholder="Pmię i nazwisko" required>
                         </label>
                         <label>Adres email
-                            <input type="email" class="form-control" placeholder="Podaj adres email" required>
+                            <input type="email" class="form-control" placeholder="Adres email" required>
                         </label>
-                        <textarea id="message-input" name="message" class="form-control" placeholder="Wpisz wiadomość" rows="6" data-error="Please, enter your message" required=""></textarea>
+                        <textarea id="message-input" name="message" class="form-control" placeholder="Wiadomość" rows="6" data-error="Please, enter your message" required=""></textarea>
                         <br>
                         <div class="help-block with-errors"></div>
                         <button type="Submit">Wyślij</button>
