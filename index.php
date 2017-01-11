@@ -416,18 +416,18 @@
                     <i class="fa fa-times-circle close-img" aria-hidden="true"></i>
                     <i class="fa fa-chevron-circle-left prev-img" aria-hidden="true"></i>
                     <i class="fa fa-chevron-circle-right next-img" aria-hidden="true"></i>
-                    <img src="img/work/portfolio_03.jpg" alt="">
+                    <img src="" alt="">
                 </div>
             </div>
             <div class="gallery">
                 <div class="gallery-image">
-                    <img src="img/work/web-mobile_08.jpg" alt="">
+                    <img src="img/work/web-mobile_07_small.jpg" alt="">
                 </div>
                 <div class="gallery-image">
-                    <img src="img/work/print_24.jpg" alt="">
+                    <img src="img/work/print_24_small.jpg" alt="">
                 </div>
                 <div class="gallery-image">
-                    <img src="" alt="">
+                    <img src="img/work/web-mobile_09_small.jpg" alt="">
                 </div>
                 <div class="gallery-image">
                     <img src="" alt="">

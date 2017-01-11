@@ -80,7 +80,6 @@ $(document).ready(function() {
     var modalContainer = $(".modal-container");
     var imgModal = $(".gallery-image-modal img");
     var imgToClick = $(".gallery-image");
-    var imgBigSrc = imgToClick.find("img").attr("src");
     var closeBtn = $(".close-img");
     var prevBtn = $(".prev-img");
     var nextBtn = $(".next-img");
@@ -95,7 +94,7 @@ $(document).ready(function() {
         imgModal.show();
         modalContainer.css({"display": "flex"});
 
-        imgModal.attr("src", $(this).find("img").attr("src"));
+        imgModal.attr("src", $(this).find("img").attr("src").replace("small", "big"));
 
     });
 

@@ -62,17 +62,6 @@
     margin: 0 auto;
     position: relative;
     @include smallBoxShadow(0.6);
-    // &:before {
-    //     font-family: 'icofont';
-    //     font-size: 40px;
-    //     line-height: 40px;
-    //     position: absolute;
-    //     content: "\efb8";
-    //     top: -35px;
-    //     right: -35px;
-    //     color: rgba(0, 0, 0, 0.5);
-    //     //        @include smallInsideShadow(0.3);
-    // }
     i {
         border: 0;
         position: absolute;
