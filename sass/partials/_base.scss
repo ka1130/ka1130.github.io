@@ -51,11 +51,11 @@ a {
 }
 
 footer {
+    background-color: $color-bg2;
     display: flex;
     justify-content: center;
     p {
         font-size: 0.9rem;
-        margin-top: 2rem;
         font-family: "Inconsolata", Helvetica, Arial, sans-serif;
         font-weight: 600;
     }

@@ -72,9 +72,13 @@ $(document).ready(function() {
     var imgToClick = $(".gallery-image");
     var imgBigSrc = imgToClick.find("img").attr("src");
     var closeBtn = $(".close-img");
+    var prevBtn = $(".prev-img");
+    var nextBtn = $(".next-img");
+
 
     imgModal.hide();
     modalContainer.hide();
+
 
     imgToClick.on("click", function(event) {
 
@@ -83,15 +87,44 @@ $(document).ready(function() {
 
         imgModal.attr("src", $(this).find("img").attr("src"));
 
-        $(".gallery-image-modal").find("span").addClass("test-classs");
     });
 
     closeBtn.on("click", function(event) {
 
         imgModal.hide();
         modalContainer.hide();
-        
+
     });
+
+    prevBtn.on("click", function(event) {
+
+        var thisSrc = $(this).parent().find("img").attr("src");
+        var srcArray = $(".gallery-image img"); //to nie jest tablica, tablicę trzeba znaleźć inaczej
+        var srcFound;
+        var srcPrev;
+         console.log(srcArray);
+
+        for (var i = 0; i < srcArray.length; i++) {
+           
+            if (thisSrc === srcArray[i]) {
+                console.log("found");
+                srcFound = thisSrc;
+                srcPrev = srcArray[i - 1];
+                imgModal.attr("src", srcPrev);
+            } else {
+                console.log(thisSrc);
+            }
+        }
+
+
+    });
+
+    nextBtn.on("click", function(event) {
+
+        console.log("ok2");
+    });
+
+
 
 
 

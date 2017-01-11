@@ -77,26 +77,24 @@
     i {
         border: 0;
         position: absolute;
-        font-size: 24px;
-        top: -30px;
-        right: -30px;
+        font-size: 36px;
         color: #fff;
-        @include smallBoxShadow(0.3);
- //       background-color: white;
         border-radius: 50%;
+        opacity: 0.65;
+        cursor: pointer;
+        @include smallBoxShadow(0.75);
+    }
+    i.close-img {
+        top: -50px;
+        right: -50px;
+    }
+    i.prev-img {
+        left: -50px;
+    }
+    i.next-img {
+        right: -50px;
     }
     img {
         max-width: 100%;
     }
-}
-
-.test-class {
-        font-family: 'icofont';
-        font-size: 40px;
-        line-height: 40px;
-        position: absolute;
-        content: "\efb8";
-        top: -35px;
-        right: -35px;
-        color: rgba(0, 0, 0, 0.5);
 }

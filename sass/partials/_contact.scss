@@ -2,6 +2,7 @@
     background-color: $color-bg2;
     .container {
         display: flex;
+        max-width: 100%;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 3rem;
@@ -12,5 +13,57 @@
             text-align: center;
             margin: 0 15px;
         }
+        .form-column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            form,
+            label,
+            input,
+            textarea,
+            h3 {
+                width: 100%;
+                display: block;
+            }
+            h3 {
+                font-family: "Inconsolata", Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-size: 1.2em;
+                margin: 2px 0px 28px 0px;
+                color: #555555;
+                margin-bottom: 2rem;
+            }
+            dl {
+                display: block;
+                width: 100%;
+            }
+            .form-control {
+                width: 100%;
+                height: 38px;
+                padding: 6px 12px;
+                line-height: 1.42857143;
+                color: #555555;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                margin-top: 5px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                font-size: 0.9rem;
+                font-family: Roboto, "Times New Roman", Times, serif;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            }
+        }
     }
+}
+
+.form-block {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.25);
+    padding: 5rem 7rem;
 }
