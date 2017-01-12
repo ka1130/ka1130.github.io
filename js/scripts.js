@@ -126,10 +126,7 @@ $(document).ready(function() {
         imgModal.show(500)
                 .attr("src", $(".gallery")
                 .find(".gallery-image[data-id='" + imageNumber + "']")
-                
                 .find("img").attr("src").replace("small", "big"));
-
-
 
     });
 

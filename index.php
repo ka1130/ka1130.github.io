@@ -411,6 +411,13 @@
             <p>
                 Lorem ipsum dolor sit amet, communication adipisicing elit, helpful eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sence of humour ullamco laboris nisi ut honest ea commodo consequat.
             </p>
+            <ul id="portfolio-filter">
+                <li><a href="#" data-filter="">All</a></li>
+                <li><a href="#" data-filter="">Web&amp;Mobile</a></li>
+                <li><a href="#" data-filter="">Print</a></li>
+                <li><a href="#" data-filter="">Identity</a></li>
+                <li><a href="#" data-filter="">Photo</a></li>
+            </ul>
             <div class="modal-container">
                 <div class="gallery-image-modal">
                     <i class="fa fa-times-circle close-img" aria-hidden="true"></i>
@@ -422,6 +429,10 @@
             <div class="gallery">
                 <div class="gallery-image" data-id="1">
                     <img src="img/work/web-mobile_07_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
                 </div>
                 <div class="gallery-image" data-id="2">
                     <img src="img/work/print_24_small.jpg" alt="">
