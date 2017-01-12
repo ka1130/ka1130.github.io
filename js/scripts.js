@@ -34,9 +34,9 @@ $(document).ready(function() {
 
     var homeBtn = $("#front li.home").find("a").find("img");
 
-    homeBtn.hover(function(event){
+    homeBtn.hover(function(event) {
         $(this).attr("src", "img/home-hover.svg");
-    }, function(event){
+    }, function(event) {
         $(this).attr("src", "img/home.svg");
     });
 
@@ -70,7 +70,9 @@ $(document).ready(function() {
         if (yScroll > position - 10) {
 
             $.each(innerBar, function(index, value) {
-                $(this).animate({ width: $(this).data("percent") }, 1500);
+                $(this).animate({
+                    width: $(this).data("percent")
+                }, 1500);
             });
 
         }
@@ -79,7 +81,8 @@ $(document).ready(function() {
     //Gallery
     var modalContainer = $(".modal-container");
     var imgModal = $(".gallery-image-modal img");
-    var imgToClick = $(".gallery-image");
+    var imgToClick = $(".gallery .gallery-image");
+    var imgArray = $(".gallery-image img").attr("src");
     var closeBtn = $(".close-img");
     var prevBtn = $(".prev-img");
     var nextBtn = $(".next-img");
@@ -92,7 +95,9 @@ $(document).ready(function() {
     imgToClick.on("click", function(event) {
 
         imgModal.show();
-        modalContainer.css({"display": "flex"});
+        modalContainer.css({
+            "display": "flex"
+        });
 
         imgModal.attr("src", $(this).find("img").attr("src").replace("small", "big"));
 
@@ -105,35 +110,20 @@ $(document).ready(function() {
 
     });
 
+
     prevBtn.on("click", function(event) {
-
-        var thisSrc = $(this).parent().find("img").attr("src");
-        var srcArray = $(".gallery-image img"); //to nie jest tablica, tablicę trzeba znaleźć inaczej
-        var srcFound;
-        var srcPrev;
-         console.log(srcArray);
-
-        for (var i = 0; i < srcArray.length; i++) {
-           
-            if (thisSrc === srcArray[i]) {
-                console.log("found");
-                srcFound = thisSrc;
-                srcPrev = srcArray[i - 1];
-                imgModal.attr("src", srcPrev);
-            } else {
-                console.log(thisSrc);
-            }
-        }
 
 
     });
 
     nextBtn.on("click", function(event) {
 
-        console.log("ok2");
+        $(".gallery .gallery-image img").each(function(index, element) {
+            console.log(element);
+        });
+
+        console.log(imgArray);
     });
-
-
 
 
 

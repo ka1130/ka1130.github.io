@@ -25,6 +25,9 @@
                 height: 150px;
                 border-radius: 5px;
                 overflow: hidden;
+                &:hover {
+                    cursor: pointer;
+                }
                 img {
                     max-width: 100%;
                     display: block;

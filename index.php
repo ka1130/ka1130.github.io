@@ -477,30 +477,30 @@
                 </div>
                 <div class="form-column">
                     <h3>Or just write me a letter here_</h3>
-                    <form action="">
+                    <form action="mailSender.php" method="POST">
                         <label>Imię i nazwisko
-                            <input type="text" class="form-control" placeholder="Pmię i nazwisko" required>
+                            <input type="text" name="name" class="form-control" placeholder="Imię i nazwisko" required>
                         </label>
                         <label>Adres email
-                            <input type="email" class="form-control" placeholder="Adres email" required>
+                            <input type="email" name="email" class="form-control" placeholder="Adres email" required>
                         </label>
                         <textarea id="message-input" name="message" class="form-control" placeholder="Wiadomość" rows="6" data-error="Please, enter your message" required=""></textarea>
                         <br>
-                        <div class="help-block with-errors"></div>
+                        <div class="error"></div>
                         <button type="Submit">Wyślij</button>
                     </form>
-<!-- <?php
+<?php
     
-    // if( $_SERVER['REQUEST_METHOD'] === 'GET' ) {
+    if( $_SERVER['REQUEST_METHOD'] === 'GET' ) {
 
-    //     if( isset( $_GET['msg'] ) && isset( $_GET['mode'] ) ) {
+        if( isset( $_GET['msg'] ) && isset( $_GET['mode'] ) ) {
 
-    //         echo '<div class="message-alert ' . $_GET['mode'] . '">' . $_GET['msg'] . '</div>';
+            echo '<div class="message-alert ' . $_GET['mode'] . '">' . $_GET['msg'] . '</div>';
 
         }
     }
 
-?>  -->
+?>  
                 </div>
             </div>
         </div>
