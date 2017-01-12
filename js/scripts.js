@@ -117,21 +117,22 @@ $(document).ready(function() {
     });
 
 
-
     prevBtn.on("click", function(event) {
-        
-        imageNumber--;
-        imgModal.attr("src", $(".gallery").find(".gallery-image[data-id='" + imageNumber + "']").find("img").attr("src").replace("small", "big"));
-        console.log(imageNumber);
 
+        imageNumber--;
+        imgModal.attr("src", $(".gallery")
+                .find(".gallery-image[data-id='" + imageNumber + "']")
+                .find("img").attr("src").replace("small", "big"));
 
     });
 
 
-
     nextBtn.on("click", function(event) {
 
-        console.log(imageNumber);
+        imageNumber++;
+        imgModal.attr("src", $(".gallery")
+                .find(".gallery-image[data-id='" + imageNumber + "']")
+                .find("img").attr("src").replace("small", "big"));
 
     });
 
