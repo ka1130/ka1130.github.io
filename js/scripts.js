@@ -86,6 +86,8 @@ $(document).ready(function() {
     var closeBtn = $(".close-img");
     var prevBtn = $(".prev-img");
     var nextBtn = $(".next-img");
+    var imgClicked;
+    var imageNumber;
 
 
     imgModal.hide();
@@ -101,7 +103,11 @@ $(document).ready(function() {
 
         imgModal.attr("src", $(this).find("img").attr("src").replace("small", "big"));
 
+        imgClicked = $(this).find("img");
+        imageNumber = imgClicked.parent().data("id");
+
     });
+
 
     closeBtn.on("click", function(event) {
 
@@ -111,18 +117,22 @@ $(document).ready(function() {
     });
 
 
+
     prevBtn.on("click", function(event) {
+        
+        imageNumber--;
+        imgModal.attr("src", $(".gallery").find(".gallery-image[data-id='" + imageNumber + "']").find("img").attr("src").replace("small", "big"));
+        console.log(imageNumber);
 
 
     });
 
+
+
     nextBtn.on("click", function(event) {
 
-        $(".gallery .gallery-image img").each(function(index, element) {
-            console.log(element);
-        });
+        console.log(imageNumber);
 
-        console.log(imgArray);
     });
 
 

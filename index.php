@@ -420,40 +420,40 @@
                 </div>
             </div>
             <div class="gallery">
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="1">
                     <img src="img/work/web-mobile_07_small.jpg" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="2">
                     <img src="img/work/print_24_small.jpg" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="3">
                     <img src="img/work/web-mobile_09_small.jpg" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="4">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="5">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="6">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="7">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="8">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="9">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="10">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="11">
                     <img src="" alt="">
                 </div>
-                <div class="gallery-image">
+                <div class="gallery-image" data-id="12">
                     <img src="" alt="">
                 </div>
             </div>
