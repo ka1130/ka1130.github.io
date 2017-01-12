@@ -11,9 +11,9 @@
 }
 
 @mixin smallInsideShadow($opacity) {
-    -webkit-box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0,$opacity);
-    -moz-box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0,$opacity);
-    box-shadow: inset 0px -4px 27px -5px rgba(0, 0,0 ,$opacity);
+    -webkit-box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0, $opacity);
+    -moz-box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0, $opacity);
+    box-shadow: inset 0px -4px 27px -5px rgba(0, 0, 0, $opacity);
 }
 
 @mixin hoverTransition($backgroundColor) {
@@ -32,4 +32,14 @@
     -o-transition: color 200ms linear;
     -ms-transition: color 200ms linear;
     transition: color 200ms linear;
+}
+
+@mixin hoverGalleryImage($opacity) {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    &:hover {
+        opacity: $opacity;
+    }
 }

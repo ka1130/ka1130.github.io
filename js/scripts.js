@@ -119,10 +119,17 @@ $(document).ready(function() {
 
     prevBtn.on("click", function(event) {
 
+//        $(".gallery-image-modal").addClass("gallery-image-slider").animate({"opacity": 0.5}, "slow");
+
         imageNumber--;
-        imgModal.attr("src", $(".gallery")
+
+        imgModal.show(500)
+                .attr("src", $(".gallery")
                 .find(".gallery-image[data-id='" + imageNumber + "']")
+                
                 .find("img").attr("src").replace("small", "big"));
+
+
 
     });
 

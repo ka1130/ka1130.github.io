@@ -25,6 +25,7 @@
                 height: 150px;
                 border-radius: 5px;
                 overflow: hidden;
+                @include hoverGalleryImage(0.5);
                 &:hover {
                     cursor: pointer;
                 }
@@ -73,7 +74,6 @@
         border-radius: 50%;
         opacity: 0.65;
         cursor: pointer;
-        @include smallBoxShadow(0.75);
     }
     i.close-img {
         top: -50px;
@@ -88,4 +88,11 @@
     img {
         max-width: 100%;
     }
+}
+
+.gallery-image-slider {
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
 }
