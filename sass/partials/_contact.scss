@@ -129,4 +129,8 @@ button {
         @include hoverTransition(white);
         @include hoverTextTransition($color-accent);
     }
+    &:active {
+        border: 0;
+        outline: none;
+    }
 }

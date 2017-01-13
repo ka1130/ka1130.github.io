@@ -15,7 +15,7 @@
             margin-bottom: 3rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: flex-start;
         }
     }
 }
@@ -119,23 +119,22 @@
     margin-left: 24px;
     li {
         list-style-type: none;
-        margin-right: 2rem;
+        margin-right: 1.3rem;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 0.8rem;
     }
-    a {
-        display: block;
-        transition: width .15s ease-in-out;
-        -moz-transition: width .15s ease-in-out;
-        -webkit-transition: width .15s ease-in-out;
-        width: 100%;
-        padding: 1px;
-        border-radius: 3px;
+    button {
+            width: 120px;
+            height: 40px;
+            background-color: #fff;
+            color: #666;
+            border-color: #999;
+            padding: 5px;
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
         &:hover {
-            background-color: #ccc;
+            background-color: #999;
             color: #fff;
-            width: 110%;
-            text-align: center;
         }
     }
 }

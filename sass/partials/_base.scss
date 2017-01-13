@@ -9,7 +9,8 @@
 700i,
 900,
 900i&subset=latin-ext');
- @font-face {
+
+@font-face {
     font-family: 'icofont';
     src: url('../fonts/icofont.eot?v=1.0.0-beta');
     src: url('../fonts/icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'), url('../fonts/icofont.ttf?v=1.0.0-beta') format('truetype'), url('../fonts/icofont.woff?v=1.0.0-beta') format('woff'), url('../fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
@@ -49,6 +50,17 @@ p {
 a {
     text-decoration: none;
     color: #343434;
+    border: 0;
+    &:active, &:hover {
+        border: 0;
+    }
+}
+
+input[type="button"]{
+   outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+   border: 0;
 }
 
 footer {
@@ -71,3 +83,4 @@ footer {
         width: 1170px;
     }
 }
+
