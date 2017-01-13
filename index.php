@@ -630,7 +630,7 @@
     <section id="contact">
         <div class="container">
             <h2>Contact_</h2>
-            <div class="form-block">
+            <div class="form-block" id="form-sent">
                 <div class="form-column">
                     <dl>
                         <dt>Phone:</dt>
