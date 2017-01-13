@@ -55,6 +55,7 @@ footer {
     background-color: $color-bg2;
     display: flex;
     justify-content: center;
+    max-width: 100%;
     p {
         font-size: 0.9rem;
         font-family: "Inconsolata", Helvetica, Arial, sans-serif;
@@ -64,7 +65,7 @@ footer {
 
 .container {
     margin: 0 auto;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     @media screen and (min-width: 1200px) {
         width: 1170px;

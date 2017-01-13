@@ -410,11 +410,11 @@
                 Lorem ipsum dolor sit amet, communication adipisicing elit, helpful eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sence of humour ullamco laboris nisi ut honest ea commodo consequat.
             </p>
             <ul id="portfolio-filter">
-                <li><a href="#" data-filter="">All</a></li>
-                <li><a href="#" data-filter="">Web&amp;Mobile</a></li>
-                <li><a href="#" data-filter="">Print</a></li>
-                <li><a href="#" data-filter="">Identity</a></li>
-                <li><a href="#" data-filter="">Photo</a></li>
+                <li><a href="#" data-filter="*">All</a></li>
+                <li><a href="#" data-filter=".web-mobile">Web&amp;Mobile</a></li>
+                <li><a href="#" data-filter=".print">Print</a></li>
+                <li><a href="#" data-filter=".identity">Identity</a></li>
+                <li><a href="#" data-filter=".photo">Photo</a></li>
             </ul>
             <div class="modal-container">
                 <div class="gallery-image-modal">
@@ -425,196 +425,196 @@
                 </div>
             </div>
             <div class="gallery">
-                <div class="gallery-image" data-id="1">
+                <div class="gallery-image web-mobile" data-id="1">
                     <img src="img/work/web-mobile_07_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="2">
+                <div class="gallery-image print" data-id="2">
                     <img src="img/work/print_24_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="3">
+                <div class="gallery-image web-mobile" data-id="3">
                     <img src="img/work/web-mobile_09_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="4">
+                <div class="gallery-image web-mobile" data-id="4">
                     <img src="img/work/web-mobile_03_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="5">
+                <div class="gallery-image web-mobile" data-id="5">
                     <img src="img/work/web-mobile_04_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="6">
+                <div class="gallery-image web-mobile" data-id="6">
                     <img src="img/work/web-mobile_06_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="7">
+                <div class="gallery-image web-mobile" data-id="7">
                     <img src="img/work/web-mobile_01_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="8">
+                <div class="gallery-image print" data-id="8">
                     <img src="img/work/print_16_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="9">
+                <div class="gallery-image print" data-id="9">
                     <img src="img/work/print_21_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="10">
+                <div class="gallery-image web-mobile" data-id="10">
                     <img src="img/work/web-mobile_08_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="11">
+                <div class="gallery-image identity" data-id="11">
                     <img src="img/work/identity_06_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image web-mobile" data-id="12">
                     <img src="img/work/web-mobile_05_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image web-mobile" data-id="13">
                     <img src="img/work/varia_07_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image web-mobile" data-id="14">
                     <img src="img/work/varia_06_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="15">
                     <img src="img/work/print_36_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="16">
                     <img src="img/work/print_31_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
-                    <img src="img/work/web-mobile_05_small.jpg" alt="">
+                <div class="gallery-image print" data-id="17">
+                    <img src="img/work/print_07_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="18">
                     <img src="img/work/print_08_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="19">
                     <img src="img/work/print_32_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image identity" data-id="20">
                     <img src="img/work/identity_12_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image identity" data-id="21">
                     <img src="img/work/identity_02_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="22">
                     <img src="img/work/print_06_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image identity" data-id="23">
                     <img src="img/work/identity_08_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="24">
                     <img src="img/work/print_04_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image identity" data-id="25">
                     <img src="img/work/identity_03_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image identity" data-id="26">
                     <img src="img/work/identity_04_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="27">
                     <img src="img/work/print_17_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="gallery-image" data-id="12">
+                <div class="gallery-image print" data-id="28">
                     <img src="img/work/print_35_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>

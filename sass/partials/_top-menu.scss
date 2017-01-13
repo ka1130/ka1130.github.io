@@ -13,22 +13,28 @@
             @media only screen and (max-width: 420px) {
                 display: none;
             }
-            a {
-                text-decoration: none;
-                color: #fff;
-                padding-left: 1rem;
-                text-transform: uppercase;
-                font-weight: 500;
-                &:hover {
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: $color-accent;
-                    &:after {
-                        content: "_";
-                        color: $color-accent;
-                    }
-                }
-            }
+        }
+    }
+}
+
+#languages, #languages li {
+    display: none;
+}
+
+#main-nav a,
+#languages a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-accent;
+        &:after {
+            content: "_";
+            color: $color-accent;
         }
     }
 }
