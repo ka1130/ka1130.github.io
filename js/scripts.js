@@ -119,12 +119,10 @@ $(document).ready(function() {
 
     prevBtn.on("click", function(event) {
 
-//        $(".gallery-image-modal").addClass("gallery-image-slider").animate({"opacity": 0.5}, "slow");
-
         imageNumber--;
 
         imgModal.show(500)
-                .attr("src", $(".gallery")
+            .attr("src", $(".gallery")
                 .find(".gallery-image[data-id='" + imageNumber + "']")
                 .find("img").attr("src").replace("small", "big"));
 
@@ -135,8 +133,28 @@ $(document).ready(function() {
 
         imageNumber++;
         imgModal.attr("src", $(".gallery")
-                .find(".gallery-image[data-id='" + imageNumber + "']")
-                .find("img").attr("src").replace("small", "big"));
+            .find(".gallery-image[data-id='" + imageNumber + "']")
+            .find("img").attr("src").replace("small", "big"));
+
+    });
+
+    //Gallery Filtering
+
+    var filterBtn = $(".filter");
+    var selectedClass = "";
+    var gallery = $(".gallery");
+    var galleryImg = $(".gallery-image");
+   
+
+    filterBtn.on("click", function(event) {
+        console.log($(this));
+        selectedClass = $(this).attr("data-filter");
+        gallery.fadeTo(100, 0.1);
+        galleryImg.not("." + selectedClass).fadeOut().removeClass("scale-animation");
+        setTimeout(function() {
+            $("." + selectedClass).fadeIn().addClass("scale-animation");
+            gallery.fadeTo(300, 1);
+        }, 300);
 
     });
 

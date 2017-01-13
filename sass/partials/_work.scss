@@ -16,33 +16,42 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            .gallery-image {
-                display: flex;
-                flex-direction: column;
-                background-color: #eee;
-                width: 250px;
-                margin: 1rem;
-                height: auto;
-                border: 5px solid #eee;
-                border-radius: 5px;
-                overflow: hidden;
-                position: relative;
-                -webkit-box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, .25);
-                -moz-box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, .25);
-                box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, .25);
-                @include hoverGalleryImage(0.5);
-                &:hover {
-                    cursor: pointer;
-                }
-                img {
-                    max-width: 100%;
-                    display: block;
-                    object-fit: fill;
-                    z-index: 1;
-                }
-            }
         }
     }
+}
+
+.gallery-image {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    width: 250px;
+    margin: 1rem;
+    height: auto;
+    border: 5px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    -webkit-box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, .25);
+    -moz-box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, .25);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, .25);
+    @include hoverGalleryImage(0.5);
+    &:hover {
+        cursor: pointer;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+        object-fit: fill;
+        z-index: 1;
+    }
+}
+
+.scale-animation {
+    transform: scale(1);
 }
 
 .modal-container {
@@ -140,7 +149,7 @@
         padding: 0;
         font-size: 80%;
     }
-    span{
+    span {
         display: block;
         font-size: 60%;
     }
