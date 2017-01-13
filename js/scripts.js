@@ -116,26 +116,35 @@ $(document).ready(function() {
 
     });
 
-
-    prevBtn.on("click", function(event) {
-
+    function getPreviousImage(event) {
         imageNumber--;
 
         imgModal.show(500)
             .attr("src", $(".gallery")
                 .find(".gallery-image[data-id='" + imageNumber + "']")
                 .find("img").attr("src").replace("small", "big"));
+    }
 
-    });
-
-
-    nextBtn.on("click", function(event) {
-
+    function getNextImage(event) {
         imageNumber++;
         imgModal.attr("src", $(".gallery")
             .find(".gallery-image[data-id='" + imageNumber + "']")
             .find("img").attr("src").replace("small", "big"));
+    }
 
+    prevBtn.on("click", getPreviousImage);
+
+    nextBtn.on("click", getNextImage);
+
+    $(window).on("keyup", function(event) {
+        var key = event.which;
+        if (key == 13 || key == 39) { // the enter key code or right arrow
+            getNextImage();
+            return false;
+        } else if (key == 37) { // left arrow
+            getPreviousImage();
+            return false;
+        }
     });
 
     //Gallery Filtering
@@ -144,7 +153,7 @@ $(document).ready(function() {
     var selectedClass = "";
     var gallery = $(".gallery");
     var galleryImg = $(".gallery-image");
-   
+
 
     filterBtn.on("click", function(event) {
         console.log($(this));
