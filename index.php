@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Kamila Matla-Tomczyk, Front-End Developer, Designer">
     <title>Kamila Matla-Tomczyk</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/7ff818362f.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -463,54 +461,169 @@
                     </div>
                 </div>
                 <div class="gallery-image" data-id="6">
-                    <img src="" alt="">
+                    <img src="img/work/web-mobile_06_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
                 <div class="gallery-image" data-id="7">
-                    <img src="" alt="">
+                    <img src="img/work/web-mobile_01_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
                 <div class="gallery-image" data-id="8">
-                    <img src="" alt="">
+                    <img src="img/work/print_16_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
                 <div class="gallery-image" data-id="9">
-                    <img src="" alt="">
+                    <img src="img/work/print_21_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
                 <div class="gallery-image" data-id="10">
-                    <img src="" alt="">
+                    <img src="img/work/web-mobile_08_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
                 <div class="gallery-image" data-id="11">
-                    <img src="" alt="">
+                    <img src="img/work/identity_06_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
                 <div class="gallery-image" data-id="12">
-                    <img src="" alt="">
+                    <img src="img/work/web-mobile_05_small.jpg" alt="">
                     <div class="image-caption">
                         <h6>Image Title</h6>
                         <span>Description</span>
                     </div>
                 </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/varia_07_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/varia_06_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_36_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_31_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/web-mobile_05_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_08_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_32_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/identity_12_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/identity_02_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_06_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/identity_08_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_04_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/identity_03_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/identity_04_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_17_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="gallery-image" data-id="12">
+                    <img src="img/work/print_35_small.jpg" alt="">
+                    <div class="image-caption">
+                        <h6>Image Title</h6>
+                        <span>Description</span>
+                    </div>
+                </div>
+
+
+                
             </div>
         </div>
     </section>
@@ -565,6 +678,8 @@
             ©2017 Kamila Matla-Tomczyk.
         </p>
     </footer>
+<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>
