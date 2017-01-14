@@ -12,6 +12,16 @@
 </head>
 
 <body>
+    <div id="container-sticky">
+        <nav id="nav-sticky">
+            <ul class="sticky-menu">
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <section id="front">
         <div class="container">
             <ul id="languages">
@@ -382,7 +392,7 @@
                         09/2007 - 11/2008
                     </p>
                     <p class="place">
-                        Grafik 
+                        Grafik
                     </p>
                     <p class="description">
                         Projekty ATL&amp;BTL, w tym udział w tworzeniu kampanii reklamowych, layouty, projekty na potrzeby druku i Internetu. Prace dla największych marek, takich jak Roche, Mercedes-Benz, Lotto, Cadbury Wedel, Heel etc.
@@ -397,7 +407,7 @@
                         07/2005 - 08/2005
                     </p>
                     <p class="place">
-                        Atelier malarza Ulricha Strube &amp; wydawnictwo przy Jean-Gebser Akademie 
+                        Atelier malarza Ulricha Strube &amp; wydawnictwo przy Jean-Gebser Akademie
                     </p>
                 </div>
             </div>
@@ -410,10 +420,18 @@
                 Lorem ipsum dolor sit amet, communication adipisicing elit, helpful eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sence of humour ullamco laboris nisi ut honest ea commodo consequat.
             </p>
             <ul id="portfolio-filter">
-                <li><button data-filter="all" class="filter">All</button></li>
-                <li><button href="#" data-filter="web-mobile" class="filter">Web&amp;Mobile</button></li>
-                <li><button href="#" data-filter="print" class="filter">Print</button></li>
-                <li><button href="#" data-filter="identity" class="filter">Identity</button></li>
+                <li>
+                    <button data-filter="all" class="filter">All</button>
+                </li>
+                <li>
+                    <button href="#" data-filter="web-mobile" class="filter">Web&amp;Mobile</button>
+                </li>
+                <li>
+                    <button href="#" data-filter="print" class="filter">Print</button>
+                </li>
+                <li>
+                    <button href="#" data-filter="identity" class="filter">Identity</button>
+                </li>
             </ul>
             <div class="modal-container">
                 <div class="gallery-image-modal scale-animation">
@@ -620,9 +638,6 @@
                         <span>Description</span>
                     </div>
                 </div>
-
-
-                
             </div>
         </div>
     </section>
@@ -656,7 +671,7 @@
                         <div class="error"></div>
                         <button type="Submit">Wyślij</button>
                     </form>
-<?php
+                    <!-- <?php
     
     if( $_SERVER['REQUEST_METHOD'] === 'GET' ) {
 
@@ -667,7 +682,7 @@
         }
     }
 
-?>  
+?>   -->
                 </div>
             </div>
         </div>
@@ -677,8 +692,8 @@
             ©2017 Kamila Matla-Tomczyk.
         </p>
     </footer>
-<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-<script src="js/scripts.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -17,7 +17,50 @@
     }
 }
 
-#languages, #languages li {
+ul.sticky-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    li {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 2rem;
+        font-family: "Inconsolata";
+        font-size: 1.3rem;
+        a {
+            color: #fff;
+            &:hover {
+                &:after {
+                    content: "_";
+                }
+            }
+        }
+    }
+}
+
+#container-sticky {
+    height: 2rem;
+    z-index: 998;
+    width: 100vw;
+    background-color: $color-accent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+#nav-sticky {
+    max-width: 1170px;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+#languages,
+#languages li {
     display: none;
 }
 
