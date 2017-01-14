@@ -33,6 +33,11 @@ $(document).ready(function() {
     //Sticky
     var stickyNav = $("#nav-sticky").parent();
 
+    function setHideTime() {
+        setTimeout(stickyNav.fadeOut(), 1500)
+    }
+
+
     function hideStickyNav() {
         $(window).on("resize", function(event) {
             if ($(window).width() < 768) {
@@ -47,20 +52,12 @@ $(document).ready(function() {
         "left": ($(window).width() / 2) - (stickyNav.width() / 2),
     });
 
-    function setHideTime() {
-        stickyNav.fadeOut(1500);
-    }
-
-    //    setTimeout(setHideTime, 2000);
 
     $(window).on("scroll", function(event) {
-
         if ($(window).scrollTop() > 100) {
-            hideStickyNav();
             stickyNav.css({
                 "display": "block"
             });
-            //        setTimeout(setHideTime, 2000);
         } else {
             stickyNav.fadeOut(500);
         }
@@ -76,7 +73,6 @@ $(document).ready(function() {
 
         if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
             stickyNav.fadeIn(500);
-            //         setTimeout(setHideTime, 2000);
         }
 
     });
@@ -288,6 +284,33 @@ $(document).ready(function() {
     //         textResume.text("");
     //     }
     // });
+
+    //Back to Top
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, 
+            backToTop = function() {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $("#back-to-top").show();
+                } else {
+                    $("#back-to-top").hide();
+                }
+            };
+        backToTop();
+
+        $(window).on("scroll", function() {
+            backToTop();
+        });
+
+        $('#back-to-top').on("click", function(event) {
+            event.preventDefault();
+            $("html, body").animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+
 
 
 
