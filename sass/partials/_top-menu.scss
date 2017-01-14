@@ -51,7 +51,7 @@ ul.sticky-menu {
     right: 0;
     left: 0;
     display: none;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-device-width: 768px) {
         display: none;
     }
     &:hover {
@@ -123,6 +123,7 @@ ul.sticky-menu {
     list-style-type: none;
     text-align: center;
     margin-left: -42px;
+    margin-bottom: 10vh;
     &:active {
         color: $color-accent;
     }

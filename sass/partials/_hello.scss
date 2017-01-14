@@ -3,6 +3,7 @@
     .container {
         display: flex;
         flex-direction: column;
+        margin-top: 8rem;
         .download-cv-block {
             width: 170px;
             height: 50px;
@@ -32,6 +33,7 @@
 
 .paragraph {
     margin: 0 auto;
+    padding-top: 2rem;
     @media screen and (min-width: 1024px) {
         width: 975px;
     }

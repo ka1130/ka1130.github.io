@@ -11,6 +11,7 @@
         p {
             text-align: center;
             margin: 0 15px;
+            padding-top: 2rem;
         }
         .resume {
             display: flex;
@@ -36,12 +37,12 @@
             h3.general-skills {
                 &:before {
                     content: "\f0b7";
-                } 
+                }
             }
             h3.employment {
-            	&:before {
-            		content: "\ea6c";
-            	}
+                &:before {
+                    content: "\ea6c";
+                }
             }
             .cv-block {
                 display: flex;
@@ -121,5 +122,3 @@
         }
     }
 }
-
-

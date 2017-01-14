@@ -33,6 +33,16 @@ $(document).ready(function() {
     //Sticky
     var stickyNav = $("#nav-sticky").parent();
 
+    function hideStickyNav() {
+        $(window).on("resize", function(event) {
+            if ($(window).width() < 768) {
+                stickyNav.hide();
+            }
+        });
+    }
+
+    hideStickyNav();
+
     stickyNav.css({
         "left": ($(window).width() / 2) - (stickyNav.width() / 2),
     });
@@ -46,6 +56,7 @@ $(document).ready(function() {
     $(window).on("scroll", function(event) {
 
         if ($(window).scrollTop() > 100) {
+            hideStickyNav();
             stickyNav.css({
                 "display": "block"
             });
@@ -110,6 +121,7 @@ $(document).ready(function() {
     });
 
     //Gallery
+    
     var modalContainer = $(".modal-container");
     var imgModal = $(".gallery-image-modal img");
     var imgToClick = $(".gallery .gallery-image");

@@ -1,5 +1,5 @@
 #front {
-    max-width: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-color: $color-bg1;
     background-image: url(../img/bg-image.jpg);
@@ -9,7 +9,7 @@
         display: flex;
         justify-content: flex-end;
         position: relative;
-        max-width: 100%;
+        width: 100%;
         box-sizing: border-box;
         @media screen and (max-width: 768px) {
             width: 100%;
