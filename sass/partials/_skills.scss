@@ -1,5 +1,6 @@
 #skills {
     background-color: $color-bg2;
+    width: 100%;
     .container {
         display: flex;
         flex-direction: column;
@@ -13,7 +14,7 @@
         width: 90%;
         height: 10px;
         background-color: #fff;
-		margin: 0 0 10px 10px;
+        margin: 0 0 10px 10px;
         border-radius: 5px;
         .inner-bar {
             position: absolute;
@@ -26,36 +27,37 @@
 
 .wrapper {
     display: flex;
-    @media screen and (max-width: 700px) {
+    margin: 0 5rem;
+    @media screen and (max-width: 768px) {
         flex-direction: column;
     }
 }
 
 .wrapper-column {
-    display: flex;    
+    display: flex;
     flex-direction: column;
-    @media screen and (min-width: 701px) {
-        width: 50%;
+    @media screen and (min-width: 769px) {
+        //       width: 50%;
+        width: 100%;
         justify-content: space-between;
     }
-    @media screen and (max-width: 700px) and (min-width: 320px){
+    @media screen and (max-width: 768px) and (min-width: 320px) {
         width: 100%;
     }
     .skill-text {
-    	padding: 0;
-    	margin-left: 10px;
-    	margin-bottom: 0;
-    	width: 90%;
-    	font-size: 0.9rem;
-    	display: flex;
-    	justify-content: space-between;
-
-    	span {
-    		display: block;
-    	}
+        padding: 0;
+        margin-left: 10px;
+        margin-bottom: 0;
+        width: 90%;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+        span {
+            display: block;
+        }
     }
 }
 
 .progress-bar-full {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
