@@ -88,7 +88,6 @@ $(document).ready(function() {
     var resumeLink = resumeBtn.find("a");
 
     resumeBtn.hover(function(event) {
-        console.log("ok");
         resumeBtn.animate({
             backgroundColor: "#fff",
             border: "4px solid #f27768",
@@ -104,7 +103,7 @@ $(document).ready(function() {
 
     //Progress bars
 
-    $(window).on('scroll', function() {
+    $(window).on("scroll", function() {
         var innerBar = $(".inner-bar");
         var yScroll = window.pageYOffset;
         var position = $("#resume").offset().top;
@@ -121,7 +120,7 @@ $(document).ready(function() {
     });
 
     //Gallery
-    
+
     var modalContainer = $(".modal-container");
     var imgModal = $(".gallery-image-modal img");
     var imgToClick = $(".gallery .gallery-image");
@@ -209,6 +208,86 @@ $(document).ready(function() {
         }, 300);
 
     });
+
+    //Tywriting Animation
+
+    // function typeString($target, str, cursor, delay) {
+    //     $target.html(function(_, html) {
+    //         return html + str[cursor];
+    //     });
+
+    //     if (cursor < str.length - 1) {
+    //         setTimeout(function() {
+    //             typeString($target, str, cursor + 1, delay);
+    //         }, delay);
+    //     }
+    // }
+
+
+    // // jQuery hook
+    // $.fn.extend({
+    //     teletype: function(opts) {
+    //         var settings = $.extend({}, $.teletype.defaults, opts);
+
+    //         return $(this).each(function() {
+    //             (function loop($tar, idx) {
+    //                 // type
+    //                 typeString($tar, settings.text[idx], 0, settings.delay);
+
+    //             }($(this), 0));
+    //         });
+    //     }
+    // });
+
+    // // plugin defaults  
+    // $.extend({
+    //     teletype: {
+    //         defaults: {
+    //             delay: 100,
+    //             pause: 5000,
+    //             text: []
+    //         }
+    //     }
+    // });
+
+    // var textHello = $("#hello").find("h2");
+    // var textResume = $("#resume").find("h2");
+    // var textPortfolio = $("#work").find("h2");
+    // var textContact = $("#contact").find("h2");
+    // var scrolled = false;
+
+
+    // $(window).on("scroll.hello", function() {
+    //     var yScroll = window.pageYOffset;
+    //     var position = textHello.offset().top;
+    //     var posDiff = position - yScroll;
+    //     console.log(posDiff);
+
+    //     if (posDiff < 400 && posDiff > 100 && !scrolled) {
+    //         textHello.teletype({
+    //             text: ["Hello_"]
+    //         });
+    //         scrolled = true;
+    //     } else {
+    //         textHello.text("");
+    //         scrolled = false
+    //     }
+    // });
+
+    // $(window).on("scroll.resume", function() {
+    //     var yScroll = window.pageYOffset;
+    //     var position = textResume.offset().top;
+    //     var posDiff = position - yScroll;
+    //     console.log(posDiff);
+
+    //     if (posDiff < -200 && posDiff > -500) {
+    //         textResume.teletype({
+    //             text: ["Resume_"]
+    //         });
+    //     } else {
+    //         textResume.text("");
+    //     }
+    // });
 
 
 
