@@ -31,10 +31,44 @@ $(document).ready(function() {
     }
 
     //Sticky
-    $("#nav-sticky").css({
-        left: ($(window).width() / 2) - ($("#nav-sticky").width() / 2)
+    var stickyNav = $("#nav-sticky").parent();
+
+    stickyNav.css({
+        "left": ($(window).width() / 2) - (stickyNav.width() / 2),
     });
 
+    function setHideTime() {
+        stickyNav.fadeOut(1500);
+    }
+
+    //    setTimeout(setHideTime, 2000);
+
+    $(window).on("scroll", function(event) {
+
+        if ($(window).scrollTop() > 100) {
+            stickyNav.css({
+                "display": "block"
+            });
+            //        setTimeout(setHideTime, 2000);
+        } else {
+            stickyNav.fadeOut(500);
+        }
+
+    });
+
+
+    $(document).on("mousemove", function(event) {
+        var verticalOffset = event.pageY;
+        var topPagePosition = $("#front").offset().top;
+        var viewPortOffsetTop = topPagePosition - $(document).scrollTop();
+        var actualYPosition = verticalOffset + viewPortOffsetTop;
+
+        if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
+            stickyNav.fadeIn(500);
+            //         setTimeout(setHideTime, 2000);
+        }
+
+    });
 
 
     //Download CV button
