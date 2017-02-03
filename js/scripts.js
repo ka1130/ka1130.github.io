@@ -1,316 +1,316 @@
-$(document).ready(function() {
+(function() {
+    $(document).ready(function() {
 
 
-    //Responsive Menu
+        //Responsive Menu
 
-    var mobileViewport = window.matchMedia("screen and (max-width: 480px)");
+        var mobileViewport = window.matchMedia("screen and (max-width: 480px)");
 
-    var hamburger = $("#hamburger i");
-    var mainNav = $("#main-nav");
-    var menuList = mainNav.find("ul");
-    var menuElements = mainNav.find("li");
-
-
-    hamburger.on("click", function(event) {
-
-        mainNav.toggleClass("menu-responsive");
-        hamburger.toggleClass("fa-bars").toggleClass("fa-times");
-        menuList.toggleClass("menu-responsive-list");
-        menuElements.toggle().addClass("menu-responsive-element");
-
-    });
+        var hamburger = $("#hamburger i");
+        var mainNav = $("#main-nav");
+        var menuList = mainNav.find("ul");
+        var menuElements = mainNav.find("li");
 
 
-    if (mobileViewport.matches) {
-        menuElements.on("click", function(event) {
-            mainNav.removeClass("menu-responsive");
-            hamburger.addClass("fa-bars").removeClass("fa-times");
-            menuList.removeClass("menu-responsive-list");
-            menuElements.hide();
+        hamburger.on("click", function(event) {
+
+            mainNav.toggleClass("menu-responsive");
+            hamburger.toggleClass("fa-bars").toggleClass("fa-times");
+            menuList.toggleClass("menu-responsive-list");
+            menuElements.toggle().addClass("menu-responsive-element");
+
         });
-    }
-
-    // //Sticky
-    // var stickyNav = $("#nav-sticky").parent();
-
-    // function setHideTime() {
-    //     setTimeout(stickyNav.fadeOut(), 1500)
-    // }
 
 
-    // function hideStickyNav() {
-    //     $(window).on("resize", function(event) {
-    //         if ($(window).width() < 768) {
-    //             stickyNav.hide();
-    //         }
-    //     });
-    // }
-
-    // hideStickyNav();
-
-    // stickyNav.css({
-    //     "left": ($(window).width() / 2) - (stickyNav.width() / 2),
-    // });
-
-
-    // $(window).on("scroll", function(event) {
-    //     if ($(window).scrollTop() > 100) {
-    //         stickyNav.css({
-    //             "display": "block"
-    //         });
-    //     } else {
-    //         stickyNav.fadeOut(500);
-    //     }
-
-    // });
-
-
-    // $(document).on("mousemove", function(event) {
-    //     var verticalOffset = event.pageY;
-    //     var topPagePosition = $("#front").offset().top;
-    //     var viewPortOffsetTop = topPagePosition - $(document).scrollTop();
-    //     var actualYPosition = verticalOffset + viewPortOffsetTop;
-
-    //     if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
-    //         stickyNav.fadeIn(500);
-    //     }
-
-    // });
-
-
-    //Download CV button
-
-    var resumeBtn = $(".download-cv-block");
-    var resumeLink = resumeBtn.find("a");
-
-    resumeBtn.hover(function(event) {
-        resumeBtn.animate({
-            backgroundColor: "#fff",
-            border: "4px solid #f27768",
-        }, 500);
-
-    });
-
-    //Resume circles
-
-    var resumeCircle = $(".cv-block-header");
-    resumeCircle.addClass("on");
-
-
-    //Progress bars
-
-    $(window).on("scroll", function() {
-        var innerBar = $(".inner-bar");
-        var yScroll = window.pageYOffset;
-        var position = $("#resume").offset().top;
-
-        if (yScroll > position - 10) {
-
-            $.each(innerBar, function(index, value) {
-                $(this).animate({
-                    width: $(this).data("percent")
-                }, 1500);
+        if (mobileViewport.matches) {
+            menuElements.on("click", function(event) {
+                mainNav.removeClass("menu-responsive");
+                hamburger.addClass("fa-bars").removeClass("fa-times");
+                menuList.removeClass("menu-responsive-list");
+                menuElements.hide();
             });
-
         }
-    });
 
-    //Gallery
+        // //Sticky
+        // var stickyNav = $("#nav-sticky").parent();
 
-    var modalContainer = $(".modal-container");
-    var imgModal = $(".gallery-image-modal img");
-    var imgToClick = $(".gallery .gallery-image");
-    var imgArray = $(".gallery-image img").attr("src");
-    var closeBtn = $(".close-img");
-    var prevBtn = $(".prev-img");
-    var nextBtn = $(".next-img");
-    var imgClicked;
-    var imageNumber;
+        // function setHideTime() {
+        //     setTimeout(stickyNav.fadeOut(), 1500)
+        // }
 
 
-    imgModal.hide();
-    modalContainer.hide();
+        // function hideStickyNav() {
+        //     $(window).on("resize", function(event) {
+        //         if ($(window).width() < 768) {
+        //             stickyNav.hide();
+        //         }
+        //     });
+        // }
+
+        // hideStickyNav();
+
+        // stickyNav.css({
+        //     "left": ($(window).width() / 2) - (stickyNav.width() / 2),
+        // });
 
 
-    imgToClick.on("click", function(event) {
+        // $(window).on("scroll", function(event) {
+        //     if ($(window).scrollTop() > 100) {
+        //         stickyNav.css({
+        //             "display": "block"
+        //         });
+        //     } else {
+        //         stickyNav.fadeOut(500);
+        //     }
 
-        imgModal.show();
-        modalContainer.css({
-            "display": "flex"
+        // });
+
+
+        // $(document).on("mousemove", function(event) {
+        //     var verticalOffset = event.pageY;
+        //     var topPagePosition = $("#front").offset().top;
+        //     var viewPortOffsetTop = topPagePosition - $(document).scrollTop();
+        //     var actualYPosition = verticalOffset + viewPortOffsetTop;
+
+        //     if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
+        //         stickyNav.fadeIn(500);
+        //     }
+
+        // });
+
+
+        //Download CV button
+
+        var resumeBtn = $(".download-cv-block");
+        var resumeLink = resumeBtn.find("a");
+
+        resumeBtn.hover(function(event) {
+            resumeBtn.animate({
+                backgroundColor: "#fff",
+                border: "4px solid #f27768",
+            }, 500);
+
         });
 
-        imgModal.attr("src", $(this).find("img").attr("src").replace("small", "big"));
+        //Resume circles
 
-        imgClicked = $(this).find("img");
-        imageNumber = imgClicked.parent().data("id");
-
-    });
+        var resumeCircle = $(".cv-block-header");
+        resumeCircle.addClass("on");
 
 
-    closeBtn.on("click", function(event) {
+        //Progress bars
+
+        $(window).on("scroll", function() {
+            var innerBar = $(".inner-bar");
+            var yScroll = window.pageYOffset;
+            var position = $("#resume").offset().top;
+
+            if (yScroll > position - 10) {
+
+                $.each(innerBar, function(index, value) {
+                    $(this).animate({
+                        width: $(this).data("percent")
+                    }, 1500);
+                });
+
+            }
+        });
+
+        //Gallery
+
+        var modalContainer = $(".modal-container");
+        var imgModal = $(".gallery-image-modal img");
+        var imgToClick = $(".gallery .gallery-image");
+        var imgArray = $(".gallery-image img").attr("src");
+        var closeBtn = $(".close-img");
+        var prevBtn = $(".prev-img");
+        var nextBtn = $(".next-img");
+        var imgClicked;
+        var imageNumber;
+
 
         imgModal.hide();
         modalContainer.hide();
 
-    });
 
-    function getPreviousImage(event) {
-        imageNumber--;
+        imgToClick.on("click", function(event) {
 
-        imgModal.show(500)
-            .attr("src", $(".gallery")
+            imgModal.show();
+            modalContainer.css({
+                "display": "flex"
+            });
+
+            imgModal.attr("src", $(this).find("img").attr("src").replace("small", "big"));
+
+            imgClicked = $(this).find("img");
+            imageNumber = imgClicked.parent().data("id");
+
+        });
+
+
+        closeBtn.on("click", function(event) {
+
+            imgModal.hide();
+            modalContainer.hide();
+
+        });
+
+        function getPreviousImage(event) {
+            imageNumber--;
+
+            imgModal.show(500)
+                .attr("src", $(".gallery")
+                    .find(".gallery-image[data-id='" + imageNumber + "']")
+                    .find("img").attr("src").replace("small", "big"));
+        }
+
+        function getNextImage(event) {
+            imageNumber++;
+            imgModal.attr("src", $(".gallery")
                 .find(".gallery-image[data-id='" + imageNumber + "']")
                 .find("img").attr("src").replace("small", "big"));
-    }
-
-    function getNextImage(event) {
-        imageNumber++;
-        imgModal.attr("src", $(".gallery")
-            .find(".gallery-image[data-id='" + imageNumber + "']")
-            .find("img").attr("src").replace("small", "big"));
-    }
-
-    prevBtn.on("click", getPreviousImage);
-
-    nextBtn.on("click", getNextImage);
-
-    $(window).on("keyup", function(event) {
-        var key = event.which;
-        if (key == 13 || key == 39) { // the enter key code or right arrow
-            getNextImage();
-            return false;
-        } else if (key == 37) { // left arrow
-            getPreviousImage();
-            return false;
         }
-    });
 
-    //Gallery Filtering
+        prevBtn.on("click", getPreviousImage);
 
-    var filterBtn = $(".filter");
-    var selectedClass = "";
-    var gallery = $(".gallery");
-    var galleryImg = $(".gallery-image");
+        nextBtn.on("click", getNextImage);
 
+        $(window).on("keyup", function(event) {
+            var key = event.which;
+            if (key == 13 || key == 39) { // the enter key code or right arrow
+                getNextImage();
+                return false;
+            } else if (key == 37) { // left arrow
+                getPreviousImage();
+                return false;
+            }
+        });
 
-    filterBtn.on("click", function(event) {
-        selectedClass = $(this).attr("data-filter");
-        gallery.fadeTo(100, 0.1);
-        galleryImg.not("." + selectedClass).fadeOut().removeClass("scale-animation");
-        setTimeout(function() {
-            $("." + selectedClass).fadeIn().addClass("scale-animation");
-            gallery.fadeTo(300, 1);
-        }, 300);
+        //Gallery Filtering
 
-    });
-
-    //Typewriting Animation
-
-    // function typeString($target, str, cursor, delay) {
-    //     $target.html(function(_, html) {
-    //         return html + str[cursor];
-    //     });
-
-    //     if (cursor < str.length - 1) {
-    //         setTimeout(function() {
-    //             typeString($target, str, cursor + 1, delay);
-    //         }, delay);
-    //     }
-    // }
+        var filterBtn = $(".filter");
+        var selectedClass = "";
+        var gallery = $(".gallery");
+        var galleryImg = $(".gallery-image");
 
 
-    // // jQuery hook
-    // $.fn.extend({
-    //     teletype: function(opts) {
-    //         var settings = $.extend({}, $.teletype.defaults, opts);
+        filterBtn.on("click", function(event) {
+            selectedClass = $(this).attr("data-filter");
+            gallery.fadeTo(100, 0.1);
+            galleryImg.not("." + selectedClass).fadeOut().removeClass("scale-animation");
+            setTimeout(function() {
+                $("." + selectedClass).fadeIn().addClass("scale-animation");
+                gallery.fadeTo(300, 1);
+            }, 300);
 
-    //         return $(this).each(function() {
-    //             (function loop($tar, idx) {
-    //                 // type
-    //                 typeString($tar, settings.text[idx], 0, settings.delay);
+        });
 
-    //             }($(this), 0));
-    //         });
-    //     }
-    // });
+        //Typewriting Animation
 
-    // // plugin defaults
-    // $.extend({
-    //     teletype: {
-    //         defaults: {
-    //             delay: 100,
-    //             pause: 5000,
-    //             text: []
-    //         }
-    //     }
-    // });
+        // function typeString($target, str, cursor, delay) {
+        //     $target.html(function(_, html) {
+        //         return html + str[cursor];
+        //     });
 
-    // var textHello = $("#hello").find("h2");
-    // var textResume = $("#resume").find("h2");
-    // var textPortfolio = $("#work").find("h2");
-    // var textContact = $("#contact").find("h2");
-    // var scrolled = false;
+        //     if (cursor < str.length - 1) {
+        //         setTimeout(function() {
+        //             typeString($target, str, cursor + 1, delay);
+        //         }, delay);
+        //     }
+        // }
 
 
-    // $(window).on("scroll.hello", function() {
-    //     var yScroll = window.pageYOffset;
-    //     var position = textHello.offset().top;
-    //     var posDiff = position - yScroll;
-    //     console.log(posDiff);
+        // // jQuery hook
+        // $.fn.extend({
+        //     teletype: function(opts) {
+        //         var settings = $.extend({}, $.teletype.defaults, opts);
 
-    //     if (posDiff < 400 && posDiff > 100 && !scrolled) {
-    //         textHello.teletype({
-    //             text: ["Hello_"]
-    //         });
-    //         scrolled = true;
-    //     } else {
-    //         textHello.text("");
-    //         scrolled = false
-    //     }
-    // });
+        //         return $(this).each(function() {
+        //             (function loop($tar, idx) {
+        //                 // type
+        //                 typeString($tar, settings.text[idx], 0, settings.delay);
 
-    // // $(window).on("scroll.resume", function() {
-    // //     var yScroll = window.pageYOffset;
-    // //     var position = textResume.offset().top;
-    // //     var posDiff = position - yScroll;
-    // //     console.log(posDiff);
+        //             }($(this), 0));
+        //         });
+        //     }
+        // });
 
-    // //     if (posDiff < -200 && posDiff > -500) {
-    // //         textResume.teletype({
-    // //             text: ["Resume_"]
-    // //         });
-    // //     } else {
-    // //         textResume.text("");
-    // //     }
-    // // });
+        // // plugin defaults
+        // $.extend({
+        //     teletype: {
+        //         defaults: {
+        //             delay: 100,
+        //             pause: 5000,
+        //             text: []
+        //         }
+        //     }
+        // });
 
-    //Back to Top
+        // var textHello = $("#hello").find("h2");
+        // var textResume = $("#resume").find("h2");
+        // var textPortfolio = $("#work").find("h2");
+        // var textContact = $("#contact").find("h2");
+        // var scrolled = false;
 
-    if ($('#back-to-top').length) {
-        var scrollTrigger = 100,
-            backToTop = function() {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > scrollTrigger) {
-                    $("#back-to-top").show();
-                } else {
-                    $("#back-to-top").hide();
-                }
-            };
-        backToTop();
 
-        $(window).on("scroll", function() {
+        // $(window).on("scroll.hello", function() {
+        //     var yScroll = window.pageYOffset;
+        //     var position = textHello.offset().top;
+        //     var posDiff = position - yScroll;
+        //     console.log(posDiff);
+
+        //     if (posDiff < 400 && posDiff > 100 && !scrolled) {
+        //         textHello.teletype({
+        //             text: ["Hello_"]
+        //         });
+        //         scrolled = true;
+        //     } else {
+        //         textHello.text("");
+        //         scrolled = false
+        //     }
+        // });
+
+        // // $(window).on("scroll.resume", function() {
+        // //     var yScroll = window.pageYOffset;
+        // //     var position = textResume.offset().top;
+        // //     var posDiff = position - yScroll;
+        // //     console.log(posDiff);
+
+        // //     if (posDiff < -200 && posDiff > -500) {
+        // //         textResume.teletype({
+        // //             text: ["Resume_"]
+        // //         });
+        // //     } else {
+        // //         textResume.text("");
+        // //     }
+        // // });
+
+        //Back to Top
+
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 100,
+                backToTop = function() {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $("#back-to-top").show();
+                    } else {
+                        $("#back-to-top").hide();
+                    }
+                };
             backToTop();
-        });
 
-        $('#back-to-top').on("click", function(event) {
-            event.preventDefault();
-            $("html, body").animate({
-                scrollTop: 0
-            }, 700);
-        });
-    }
+            $(window).on("scroll", function() {
+                backToTop();
+            });
 
+            $('#back-to-top').on("click", function(event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
 
+    });
 
-
-});
+})();
