@@ -207,83 +207,69 @@
 
         //Typewriting Animation
 
-        // function typeString($target, str, cursor, delay) {
-        //     $target.html(function(_, html) {
-        //         return html + str[cursor];
-        //     });
+        function typeString($target, str, cursor, delay) {
+            $target.html(function(_, html) {
+                return html + str[cursor];
+            });
 
-        //     if (cursor < str.length - 1) {
-        //         setTimeout(function() {
-        //             typeString($target, str, cursor + 1, delay);
-        //         }, delay);
-        //     }
-        // }
+            if (cursor < str.length - 1) {
+                setTimeout(function() {
+                    typeString($target, str, cursor + 1, delay);
+                }, delay);
+            }
+        }
 
 
-        // // jQuery hook
-        // $.fn.extend({
-        //     teletype: function(opts) {
-        //         var settings = $.extend({}, $.teletype.defaults, opts);
+        // jQuery hook
+        $.fn.extend({
+            teletype: function(opts) {
+                var settings = $.extend({}, $.teletype.defaults, opts);
 
-        //         return $(this).each(function() {
-        //             (function loop($tar, idx) {
-        //                 // type
-        //                 typeString($tar, settings.text[idx], 0, settings.delay);
+                return $(this).each(function() {
+                    (function loop($tar, idx) {
+                        // type
+                        typeString($tar, settings.text[idx], 0, settings.delay);
 
-        //             }($(this), 0));
-        //         });
-        //     }
-        // });
+                    }($(this), 0));
+                });
+            }
+        });
 
-        // // plugin defaults
-        // $.extend({
-        //     teletype: {
-        //         defaults: {
-        //             delay: 100,
-        //             pause: 5000,
-        //             text: []
-        //         }
-        //     }
-        // });
+        // plugin defaults
+        $.extend({
+            teletype: {
+                defaults: {
+                    delay: 100,
+                    pause: 5000,
+                    text: []
+                }
+            }
+        });
 
-        // var textHello = $("#hello").find("h2");
-        // var textResume = $("#resume").find("h2");
-        // var textPortfolio = $("#work").find("h2");
-        // var textContact = $("#contact").find("h2");
+        var textHello = $("#hello").find("h2");
+        var textResume = $("#resume").find("h2");
+        var textPortfolio = $("#work").find("h2");
+        var textContact = $("#contact").find("h2");
         // var scrolled = false;
 
-
-        // $(window).on("scroll.hello", function() {
-        //     var yScroll = window.pageYOffset;
-        //     var position = textHello.offset().top;
-        //     var posDiff = position - yScroll;
-        //     console.log(posDiff);
-
-        //     if (posDiff < 400 && posDiff > 100 && !scrolled) {
-        //         textHello.teletype({
-        //             text: ["Hello_"]
-        //         });
-        //         scrolled = true;
-        //     } else {
-        //         textHello.text("");
-        //         scrolled = false
-        //     }
+        // textHello.on("mouseover", function(event) {
+        //     textHello.empty();
+        //     textHello.teletype({
+        //         text: ["Hello_"]
+        //     });
         // });
 
-        // // $(window).on("scroll.resume", function() {
-        // //     var yScroll = window.pageYOffset;
-        // //     var position = textResume.offset().top;
-        // //     var posDiff = position - yScroll;
-        // //     console.log(posDiff);
+        $(window).on("scroll.hello", function() {
+            textHello.empty();
+            textHello.teletype({
+                text: ["Hello_"]
+            });
 
-        // //     if (posDiff < -200 && posDiff > -500) {
-        // //         textResume.teletype({
-        // //             text: ["Resume_"]
-        // //         });
-        // //     } else {
-        // //         textResume.text("");
-        // //     }
-        // // });
+        });
+
+
+
+
 
         //Back to Top
 
