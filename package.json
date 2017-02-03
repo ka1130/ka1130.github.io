@@ -1,0 +1,31 @@
+{
+    "name": "ka1130.github.io",
+    "version": "1.0.0",
+    "description": "personal website",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "gulp-jshint": "^2.0.4",
+        "gulp-sourcemaps": "^1.9.1",
+        "gulp-sass": "^3.0.0",
+        "jshint": "^2.9.4",
+        "waypoints": "^4.0.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ka1130/ka1130.github.io.git"
+    },
+    "keywords": [
+        "portfolio"
+    ],
+    "author": "Kamila Tomczyk",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ka1130/ka1130.github.io/issues"
+    },
+    "homepage": "https://github.com/ka1130/ka1130.github.io#readme"
+}

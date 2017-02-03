@@ -250,22 +250,29 @@
         var textResume = $("#resume").find("h2");
         var textPortfolio = $("#work").find("h2");
         var textContact = $("#contact").find("h2");
-        // var scrolled = false;
 
-        // textHello.on("mouseover", function(event) {
-        //     textHello.empty();
-        //     textHello.teletype({
-        //         text: ["Hello_"]
-        //     });
-        // });
+        var hello = new Waypoint({
+            element: document.getElementById('hello'),
+            handler: function() {
+                console.log('Basic waypoint triggered')
+            }
+        })
 
-        $(window).one("scroll.hello", function() {
-            textHello.empty();
-            textHello.teletype({
-                text: ["Hello_"]
+
+        function teletypeText(element, str) {
+            element.empty();
+            element.teletype({
+                text: [str]
             });
+        }
 
-        });
+        $(window).on("scroll.hello", teletypeText(textHello, "Hello_"));
+        $(window).on("scroll.resume", teletypeText(textResume, "Resume_"));
+        $(window).on("scroll.portfolio", teletypeText(textPortfolio, "Portfolio_"));
+        $(window).on("scroll.contact", teletypeText(textContact, "Kontakt_"));
+
+
+
 
 
 
