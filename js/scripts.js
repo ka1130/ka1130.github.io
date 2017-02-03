@@ -30,52 +30,52 @@ $(document).ready(function() {
         });
     }
 
-    //Sticky
-    var stickyNav = $("#nav-sticky").parent();
+    // //Sticky
+    // var stickyNav = $("#nav-sticky").parent();
 
-    function setHideTime() {
-        setTimeout(stickyNav.fadeOut(), 1500)
-    }
-
-
-    function hideStickyNav() {
-        $(window).on("resize", function(event) {
-            if ($(window).width() < 768) {
-                stickyNav.hide();
-            }
-        });
-    }
-
-    hideStickyNav();
-
-    stickyNav.css({
-        "left": ($(window).width() / 2) - (stickyNav.width() / 2),
-    });
+    // function setHideTime() {
+    //     setTimeout(stickyNav.fadeOut(), 1500)
+    // }
 
 
-    $(window).on("scroll", function(event) {
-        if ($(window).scrollTop() > 100) {
-            stickyNav.css({
-                "display": "block"
-            });
-        } else {
-            stickyNav.fadeOut(500);
-        }
+    // function hideStickyNav() {
+    //     $(window).on("resize", function(event) {
+    //         if ($(window).width() < 768) {
+    //             stickyNav.hide();
+    //         }
+    //     });
+    // }
 
-    });
+    // hideStickyNav();
+
+    // stickyNav.css({
+    //     "left": ($(window).width() / 2) - (stickyNav.width() / 2),
+    // });
 
 
-    $(document).on("mousemove", function(event) {
-        var verticalOffset = event.pageY;
-        var topPagePosition = $("#front").offset().top;
-        var viewPortOffsetTop = topPagePosition - $(document).scrollTop();
-        var actualYPosition = verticalOffset + viewPortOffsetTop;
+    // $(window).on("scroll", function(event) {
+    //     if ($(window).scrollTop() > 100) {
+    //         stickyNav.css({
+    //             "display": "block"
+    //         });
+    //     } else {
+    //         stickyNav.fadeOut(500);
+    //     }
 
-        if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
-            stickyNav.fadeIn(500);
-        }
+    // });
 
-    });
+
+    // $(document).on("mousemove", function(event) {
+    //     var verticalOffset = event.pageY;
+    //     var topPagePosition = $("#front").offset().top;
+    //     var viewPortOffsetTop = topPagePosition - $(document).scrollTop();
+    //     var actualYPosition = verticalOffset + viewPortOffsetTop;
+
+    //     if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
+    //         stickyNav.fadeIn(500);
+    //     }
+
+    // });
 
 
     //Download CV button
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
     });
 
-    //Resume circles 
+    //Resume circles
 
     var resumeCircle = $(".cv-block-header");
     resumeCircle.addClass("on");
@@ -234,7 +234,7 @@ $(document).ready(function() {
     //     }
     // });
 
-    // // plugin defaults  
+    // // plugin defaults
     // $.extend({
     //     teletype: {
     //         defaults: {
@@ -287,7 +287,7 @@ $(document).ready(function() {
     //Back to Top
 
     if ($('#back-to-top').length) {
-        var scrollTrigger = 100, 
+        var scrollTrigger = 100,
             backToTop = function() {
                 var scrollTop = $(window).scrollTop();
                 if (scrollTop > scrollTrigger) {

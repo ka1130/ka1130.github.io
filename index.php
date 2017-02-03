@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!--<div id="container-sticky">
+    <div id="container-sticky">
         <nav id="nav-sticky">
             <ul class="sticky-menu">
                 <li><a href="#front">Home</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
-    </div>-->
+    </div>
     <section id="front">
         <div class="container">
             <ul id="languages">
@@ -104,7 +104,7 @@
                 </p>
             </div>
             <div class="download-cv-block">
-                <a href="#" target="_blank" class="btn-main">Pobierz CV</a>
+                <a href="CV_Kamila_Matla_Tomczyk.pdf" target="_blank" class="btn-main">Pobierz CV</a>
             </div>
         </div>
     </section>
@@ -251,7 +251,7 @@
                 </div>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        Warszawska Szkoła Fotografii i Grafiki Komputerowej
+                        Warszawska Szkoła Fotografii i Grafiki Komputerowej 
                     </h4>
                     <p class="dates">
                         10/2013 - 06/2015
@@ -265,7 +265,7 @@
                 </div>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        Polsko-Japońska Akademia Technik Komputerowych
+                        Polsko-Japońska Akademia Technik Komputerowych 
                     </h4>
                     <p class="dates">
                         05/2011 - 06/2012
@@ -279,7 +279,7 @@
                 </div>
                 <div class="cv-block">
                     <h4 class="cv-block-header">
-                        Europejska Akademia Sztuk
+                        Europejska Akademia Sztuk 
                     </h4>
                     <p class="dates">
                         10/2002 - 06/2007
@@ -297,7 +297,7 @@
                 <div class="cv-block">
                     <h4 class="cv-block-header">
                         Polish Campus Marketing / Trend Food International <br>
-                        <small>Warszawa</small>
+                        <small>Warszawa</small> 
                     </h4>
                     <p class="dates">
                         07/2012 - 07/2016
@@ -306,8 +306,7 @@
                         Senior Graphic Designer
                     </p>
                     <p class="description">
-                        Odpowiedzialna za wszelkiego rodzaju projekty graficzne, projekty internetowe (wdrażanie, edycja i stały nadzór nad stronami firmowymi opartymi o Wordpress), sesje fotograficzne, teksty marketingowe, tłumaczenia i działania organizacyjne. Współpraca z
-                        programistami www.
+                        Odpowiedzialna za wszelkiego rodzaju projekty graficzne, projekty internetowe (wdrażanie, edycja i stały nadzór nad stronami firmowymi opartymi o Wordpress), sesje fotograficzne, teksty marketingowe, tłumaczenia i działania organizacyjne. Współpraca z programistami www.
                     </p>
                 </div>
                 <div class="cv-block">
@@ -322,8 +321,7 @@
                         Grafik / Redaktor prowadzący
                     </p>
                     <p class="description">
-                        Odpowiedzialna za wszelkiego rodzaju projekty graficzne. Redaktor prowadzący czasopisma “Logistyka Odzysku”: tworzenie layoutu, DTP, pisanie artykułów specjalistycznych, korekta, działania organizacyjne. Projekty www, layouty stron, mailingi i szablony
-                        aukcyjne w HTML, banery Flash. Współpraca z programistami. Tłumacz. Fotograf.
+                        Odpowiedzialna za wszelkiego rodzaju projekty graficzne. Redaktor prowadzący czasopisma “Logistyka Odzysku”: tworzenie layoutu, DTP, pisanie artykułów specjalistycznych, korekta, działania organizacyjne. Projekty www, layouty stron, mailingi i szablony aukcyjne w HTML, banery Flash. Współpraca z programistami. Tłumacz. Fotograf.
                     </p>
                 </div>
                 <div class="cv-block">
@@ -653,18 +651,15 @@
                         <dt>Telefon:</dt>
                         <dd><a href="tel:+48692814977">+48 692 814 977</a></dd>
                         <br>
+                        <dt>Skype:</dt>
+                        <dd><a href="skype:kamatla">kamatla</a></dd>
+                        <br>
                         <dt>E-mail:</dt>
                         <dd><a href="mailto:kamila.matla@gmail.com">kamila.matla@gmail.com</a></dd>
-                        <br>
-                        <dt>GitHub:</dt>
-                        <dd><a href="https://github.com/ka1130" target="_new">https://github.com/ka1130</a></dd>
-                        <br>
-                        <dt>LinkedIn:</dt>
-                        <dd><a href="https://pl.linkedin.com/in/kamilamatla" target="_new">https://pl.linkedin.com/in/kamilamatla</a></dd>
                     </dl>
                 </div>
                 <div class="form-column">
-                    <!--<h3>...lub prześlij mi wiadomość tutaj_</h3>
+                    <h3>...lub prześlij mi wiadomość tutaj_</h3>
                     <form action="mailSender.php" method="POST">
                         <label>Imię i nazwisko
                             <input type="text" name="name" class="form-control" placeholder="Imię i nazwisko" required>
@@ -672,13 +667,13 @@
                         <label>Adres email
                             <input type="email" name="email" class="form-control" placeholder="Adres email" required>
                         </label>
-                        <textarea id="message-input" name="message" class="form-control" placeholder="This contact form has been temporarily disabled for security reasons. Please contact me on kamila.matla@gmail.com" rows="6" data-error="Please, enter your message" required=""></textarea>
+                        <textarea id="message-input" name="message" class="form-control" placeholder="Wiadomość" rows="6" data-error="Please, enter your message" required=""></textarea>
                         <br>
                         <div class="error"></div>
                         <button type="Submit">Wyślij</button>
-                    </form>-->
-                    <!-- <?php
-
+                    </form>
+                    <?php
+    
     if( $_SERVER['REQUEST_METHOD'] === 'GET' ) {
 
         if( isset( $_GET['msg'] ) && isset( $_GET['mode'] ) ) {
@@ -688,8 +683,8 @@
         }
     }
 
-?>   -->
-                    <button id="back-to-top">Do góry</button>
+?>  
+<button id="back-to-top">Do góry</button>
                 </div>
             </div>
         </div>
