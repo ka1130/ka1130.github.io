@@ -9,8 +9,8 @@
         }
         p {
             text-align: center;
-            margin: 0 15px 15px 15px;
-             padding-top: 2rem;
+            margin: 0;
+            padding-top: 2rem;
         }
         .gallery {
             margin-bottom: 3rem;
@@ -126,13 +126,13 @@
         font-size: 0.8rem;
     }
     button {
-            width: 120px;
-            height: 40px;
-            background-color: #fff;
-            color: #666;
-            border-color: #999;
-            padding: 5px;
-            font-family: "Roboto", Helvetica, Arial, sans-serif;
+        width: 120px;
+        height: 40px;
+        background-color: #fff;
+        color: #666;
+        border-color: #999;
+        padding: 5px;
+        font-family: "Roboto", Helvetica, Arial, sans-serif;
         &:hover {
             background-color: #999;
             color: #fff;
