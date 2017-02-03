@@ -259,7 +259,7 @@
         //     });
         // });
 
-        $(window).on("scroll.hello", function() {
+        $(window).one("scroll.hello", function() {
             textHello.empty();
             textHello.teletype({
                 text: ["Hello_"]
