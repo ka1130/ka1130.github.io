@@ -252,11 +252,18 @@
         var textContact = $("#contact").find("h2");
 
         var hello = new Waypoint({
-            element: document.getElementById('hello'),
+            element: document.getElementById("hello"),
             handler: function() {
-                console.log('Basic waypoint triggered')
+                teletypeText(textHello, "Hello_")
             }
-        })
+        });
+
+        var resume = new Waypoint({
+            element: document.getElementById("resume"),
+            handler: function() {
+                teletypeText(textResume, "Resume_")
+            }
+        });
 
 
         function teletypeText(element, str) {
@@ -266,8 +273,7 @@
             });
         }
 
-        $(window).on("scroll.hello", teletypeText(textHello, "Hello_"));
-        $(window).on("scroll.resume", teletypeText(textResume, "Resume_"));
+
         $(window).on("scroll.portfolio", teletypeText(textPortfolio, "Portfolio_"));
         $(window).on("scroll.contact", teletypeText(textContact, "Kontakt_"));
 
