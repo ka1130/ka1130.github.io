@@ -251,20 +251,10 @@
         var textPortfolio = $("#work").find("h2");
         var textContact = $("#contact").find("h2");
 
-        var hello = new Waypoint({
-            element: document.getElementById("hello"),
-            handler: function() {
-                teletypeText(textHello, "Hello_")
-            }
-        });
-
-        var resume = new Waypoint({
-            element: document.getElementById("resume"),
-            handler: function() {
-                teletypeText(textResume, "Resume_")
-            }
-        });
-
+        textHello.hide();
+        textResume.hide();
+        textPortfolio.hide();
+        textContact.hide();
 
         function teletypeText(element, str) {
             element.empty();
@@ -273,15 +263,37 @@
             });
         }
 
+        var hello = new Waypoint({
+            element: document.getElementById("hello"),
+            handler: function() {
+                textHello.show();
+                teletypeText(textHello, "Hello_")
+            }
+        });
 
-        $(window).on("scroll.portfolio", teletypeText(textPortfolio, "Portfolio_"));
-        $(window).on("scroll.contact", teletypeText(textContact, "Kontakt_"));
+        var resume = new Waypoint({
+            element: document.getElementById("resume"),
+            handler: function() {
+                textResume.show();
+                teletypeText(textResume, "Resume_")
+            }
+        });
 
+        var portfolio = new Waypoint({
+            element: document.getElementById("work"),
+            handler: function() {
+                textPortfolio.show();
+                teletypeText(textPortfolio, "Portfolio_")
+            }
+        });
 
-
-
-
-
+        var contact = new Waypoint({
+            element: document.getElementById("contact"),
+            handler: function() {
+                textContact.show();
+                teletypeText(textContact, "Kontakt_")
+            }
+        });
 
 
         //Back to Top
