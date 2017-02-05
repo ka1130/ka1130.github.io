@@ -66,16 +66,10 @@ ul.sticky-menu {
     margin: 0 auto;
 }
 
-#languages,
-#languages li {
-    display: none;
-}
-
 #main-nav a,
 #languages a {
     text-decoration: none;
     color: #fff;
-    padding-left: 1rem;
     text-transform: uppercase;
     font-weight: 500;
     &:hover {
@@ -87,6 +81,14 @@ ul.sticky-menu {
             color: $color-accent;
         }
     }
+}
+
+#main-nav a {
+    padding-left: 1rem;
+}
+
+#languages a {
+    padding-left: 0;
 }
 
 #hamburger {
