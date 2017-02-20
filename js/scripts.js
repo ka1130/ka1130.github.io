@@ -31,54 +31,6 @@
             });
         }
 
-        // //Sticky
-        // var stickyNav = $("#nav-sticky").parent();
-
-        // function setHideTime() {
-        //     setTimeout(stickyNav.fadeOut(), 1500)
-        // }
-
-
-        // function hideStickyNav() {
-        //     $(window).on("resize", function(event) {
-        //         if ($(window).width() < 768) {
-        //             stickyNav.hide();
-        //         }
-        //     });
-        // }
-
-        // hideStickyNav();
-
-        // stickyNav.css({
-        //     "left": ($(window).width() / 2) - (stickyNav.width() / 2),
-        // });
-
-
-        // $(window).on("scroll", function(event) {
-        //     if ($(window).scrollTop() > 100) {
-        //         stickyNav.css({
-        //             "display": "block"
-        //         });
-        //     } else {
-        //         stickyNav.fadeOut(500);
-        //     }
-
-        // });
-
-
-        // $(document).on("mousemove", function(event) {
-        //     var verticalOffset = event.pageY;
-        //     var topPagePosition = $("#front").offset().top;
-        //     var viewPortOffsetTop = topPagePosition - $(document).scrollTop();
-        //     var actualYPosition = verticalOffset + viewPortOffsetTop;
-
-        //     if ((actualYPosition) <= 20 && !stickyNav.is(":visible")) {
-        //         stickyNav.fadeIn(500);
-        //     }
-
-        // });
-
-
         //Download CV button
 
         var resumeBtn = $(".download-cv-block");
@@ -162,6 +114,7 @@
                 .attr("src", $(".gallery")
                     .find(".gallery-image[data-id='" + imageNumber + "']")
                     .find("img").attr("src").replace("small", "big"));
+
         }
 
         function getNextImage(event) {
